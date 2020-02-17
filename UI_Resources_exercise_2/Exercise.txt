@@ -1,0 +1,14 @@
+Homework Lecture 3.
+Make a quick image viewing app, using NON COPYWRITED images.
+Have the app load in images from resources.
+
+Use your resource files for applying values to your layouts
+ 
+Try out using different measurements of height and width for elements and image.
+ 
+Make the app multi linguistic (support more languages) e.g. English and
+	your native language.
+Make the app resilient to different screen sizes. e.g small smartphone vs large phones.	
+	Try out your existing app with different emulators.
+	How does px, sp, and dp work compared to each other. 
+Create layouts for both landscape and portrait.

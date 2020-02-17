@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <TextView
+        android:id="@+id/test_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#5cb3ff"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        tools:text="Test"
+        android:textAlignment="center">
+    </TextView>
+
+</FrameLayout>

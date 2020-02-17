@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Billede Platform</string>
+    <string name="previous">Forrige</string>
+    <string name="next">Næste</string>
+</resources>
