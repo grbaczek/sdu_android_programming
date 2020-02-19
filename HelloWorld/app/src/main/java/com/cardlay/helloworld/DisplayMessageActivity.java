@@ -1,5 +1,6 @@
 package com.cardlay.helloworld;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,6 +27,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
         textView.setText(message);
 
         Log.i(TAG, "DisplayMessageActivity onCreate");
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.i(TAG, "DisplayMessageActivity onSaveInstanceState");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.i(TAG, "DisplayMessageActivity onRestoreInstanceState");
     }
 
     @Override
