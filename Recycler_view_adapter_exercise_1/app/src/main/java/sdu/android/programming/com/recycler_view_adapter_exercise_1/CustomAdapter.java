@@ -34,13 +34,19 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     public CustomAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.random_textview, parent, false);
         TextView tv = v.findViewById(R.id.test_tv);
-        ViewHolder vh = new ViewHolder(v, tv);
+        final ViewHolder vh = new ViewHolder(v, tv);
+        vh.textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deleteItem(vh.getAdapterPosition(),v);
+            }
+        });
         return vh;
     }
 
 
     /**
-     * Binds current viewholder, and creates on click listener for each item (NOT the best design, regarding click listeners)
+     * Binds current viewholder, and creates on click listener for each item
      * @param holder
      * @param position
      */
@@ -49,13 +55,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         final String message = String.format("Setting textview for position: %s" , position);
         Log.i("Holder",message);
         holder.textView.setText(numbers.get(position).toString());
-        holder.textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deleteItem(holder.getAdapterPosition(),v);
-            }
-        });
-
     }
 
     @Override
