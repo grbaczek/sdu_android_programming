@@ -1,0 +1,4 @@
+#Tue Mar 03 20:19:34 CET 2020
+base.0=/Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

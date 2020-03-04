@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Mar 02 22:55:33 CET 2020
+0.baseType=DIRECTORY
+0.base=/Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1

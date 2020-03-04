@@ -1,0 +1,158 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:18:1-40:12
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:18:1-40:12
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:18:1-40:12
+MERGED from [com.android.support:support-v13:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ec1a20f0a501edc2ddf0e9b3f4104d6c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:24.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/8776259b766b75817ffcbd0fab8c69b1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ff03fd23794febcef73e449c0a8dd69f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/e34aaeb6af2991781fe23635614e5ecd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/63f6d30865588556139f0bc2e2ae540d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f4d3555bba59bdb1a17ee4343ec0aa36/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/19e6f77281177428ce5d644d822f064e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/395ec475a62778bd820852ad94797a6d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/3da3cf2980baca73cfa382a0dd5aaf78/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/c89d46d9fa8b1ff70c3eabc706d6e7ce/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f33d30933f63268b7f86ce3d129d0693/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/6329f85d3f8de8e35b29fe972681cb48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/97c6fdd62ba73f10f9db0874cb447858/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/2784de3357ec01fe0ba722257ce1d2fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/451cd819da35c7d5b4feef39f3ce8481/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d4950ebd3a0ccc5e7d37bb6f88952221/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/30b4c9123c6b2046c8b8b1280e7ecd2d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/42509f2919fca47a85e6b8d0d81701e5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0664c4c890b82d9a9ea3e06755f91ea6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/7917b5ccc846b18e93b7dc029d028907/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0fa5249f274596f7804ec03ef423da20/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/140009c57d6a798c880dec8d0d9b9ed2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/76334006a169cf089f0cf010eb2de93b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f4b31d2897e27a03889f7cb2b0bfeb4b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/605234854f21cb6c7f36ab2cb9307a9f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/97407fd6b26f02ae28c18b4ba8913d0d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/70e28927220760ef380272a9dd79eea5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/1830806f4398a8b6383a9db28e66e006/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/585e7571ac5bb49c1595ca19ed96c6ff/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/a51a8f7418de62957b5df74f79139c3b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/2307650cdd7c5f37e98fdc2221a598d2/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:18:1-40:12
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:18:1-40:12
+	package
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:19:5-47
+	android:versionName
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:21:5-30
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:18:11-69
+	android:versionCode
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:20:5-28
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+application
+ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:25:5-37:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/7917b5ccc846b18e93b7dc029d028907/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/7917b5ccc846b18e93b7dc029d028907/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0fa5249f274596f7804ec03ef423da20/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0fa5249f274596f7804ec03ef423da20/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/7917b5ccc846b18e93b7dc029d028907/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:26:9-41
+	android:icon
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:27:9-45
+	android:allowBackup
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:25:18-44
+	android:theme
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:28:9-40
+activity#com.example.android.recyclerview.MainActivity
+ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:30:9-36:20
+	android:label
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:31:19-51
+	android:name
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:30:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:32:13-35:29
+action#android.intent.action.MAIN
+ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml:34:27-74
+uses-sdk
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ec1a20f0a501edc2ddf0e9b3f4104d6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ec1a20f0a501edc2ddf0e9b3f4104d6c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:24.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/8776259b766b75817ffcbd0fab8c69b1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:24.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/8776259b766b75817ffcbd0fab8c69b1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ff03fd23794febcef73e449c0a8dd69f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ff03fd23794febcef73e449c0a8dd69f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/e34aaeb6af2991781fe23635614e5ecd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/e34aaeb6af2991781fe23635614e5ecd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/63f6d30865588556139f0bc2e2ae540d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/63f6d30865588556139f0bc2e2ae540d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f4d3555bba59bdb1a17ee4343ec0aa36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f4d3555bba59bdb1a17ee4343ec0aa36/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/19e6f77281177428ce5d644d822f064e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/19e6f77281177428ce5d644d822f064e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/395ec475a62778bd820852ad94797a6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/395ec475a62778bd820852ad94797a6d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/3da3cf2980baca73cfa382a0dd5aaf78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/3da3cf2980baca73cfa382a0dd5aaf78/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/c89d46d9fa8b1ff70c3eabc706d6e7ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/c89d46d9fa8b1ff70c3eabc706d6e7ce/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f33d30933f63268b7f86ce3d129d0693/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f33d30933f63268b7f86ce3d129d0693/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/6329f85d3f8de8e35b29fe972681cb48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/6329f85d3f8de8e35b29fe972681cb48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/97c6fdd62ba73f10f9db0874cb447858/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/97c6fdd62ba73f10f9db0874cb447858/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/2784de3357ec01fe0ba722257ce1d2fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/2784de3357ec01fe0ba722257ce1d2fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/451cd819da35c7d5b4feef39f3ce8481/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/451cd819da35c7d5b4feef39f3ce8481/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d4950ebd3a0ccc5e7d37bb6f88952221/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d4950ebd3a0ccc5e7d37bb6f88952221/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/30b4c9123c6b2046c8b8b1280e7ecd2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/30b4c9123c6b2046c8b8b1280e7ecd2d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/42509f2919fca47a85e6b8d0d81701e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/42509f2919fca47a85e6b8d0d81701e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0664c4c890b82d9a9ea3e06755f91ea6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0664c4c890b82d9a9ea3e06755f91ea6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/7917b5ccc846b18e93b7dc029d028907/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/7917b5ccc846b18e93b7dc029d028907/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0fa5249f274596f7804ec03ef423da20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/0fa5249f274596f7804ec03ef423da20/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/140009c57d6a798c880dec8d0d9b9ed2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/140009c57d6a798c880dec8d0d9b9ed2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/76334006a169cf089f0cf010eb2de93b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/76334006a169cf089f0cf010eb2de93b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f4b31d2897e27a03889f7cb2b0bfeb4b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/f4b31d2897e27a03889f7cb2b0bfeb4b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/605234854f21cb6c7f36ab2cb9307a9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/605234854f21cb6c7f36ab2cb9307a9f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/97407fd6b26f02ae28c18b4ba8913d0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/97407fd6b26f02ae28c18b4ba8913d0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/70e28927220760ef380272a9dd79eea5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/70e28927220760ef380272a9dd79eea5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/1830806f4398a8b6383a9db28e66e006/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/1830806f4398a8b6383a9db28e66e006/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/585e7571ac5bb49c1595ca19ed96c6ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/585e7571ac5bb49c1595ca19ed96c6ff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/a51a8f7418de62957b5df74f79139c3b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/a51a8f7418de62957b5df74f79139c3b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/2307650cdd7c5f37e98fdc2221a598d2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/2307650cdd7c5f37e98fdc2221a598d2/AndroidManifest.xml:20:5-44
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/funProjects/views-widgets-samples/RecyclerView/Application/src/main/AndroidManifest.xml

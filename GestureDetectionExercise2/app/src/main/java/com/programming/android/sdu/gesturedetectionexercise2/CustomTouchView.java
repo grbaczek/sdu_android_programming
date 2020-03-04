@@ -47,6 +47,7 @@ public class CustomTouchView extends View implements GestureDetector.OnGestureLi
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         Paint left_top_paint = new Paint();
+
         Rect left_top = new Rect(0, 0, getWidth() / 2, getHeight() / 2);
         Rect right_top = new Rect(getWidth() / 2, 0, getWidth() , getHeight() / 2);
         Rect bottom_left = new Rect(0, getHeight() / 2, getWidth() / 2 , getHeight() );

@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -55,6 +56,7 @@ public class CustomSwipeView extends View implements GestureDetector.OnGestureLi
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 gestureDetector.onTouchEvent(event);
+                Log.i("CustomSwipeView", "onTouchListener");
                 return true;
             }
         });
