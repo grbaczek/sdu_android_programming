@@ -53,13 +53,13 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
     @Override
     public void onBindViewHolder(final CustomAdapter.ViewHolder holder, int position) {
         final String message = String.format("Setting textview for position: %s" , position);
-        Log.i("Holder",message);
+        Log.i("CustomAdapter",message);
         holder.textView.setText(numbers.get(position).toString());
     }
 
     @Override
     public int getItemCount() {
-        Log.i("Holder",String.format("Getting item count: %s",numbers.size()));
+        Log.i("CustomAdapter",String.format("Getting item count: %s",numbers.size()));
         return numbers.size();
     }
 
@@ -82,7 +82,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
      */
     public void deleteItem(final int position, View v){
         String message = String.format("Removing item at position: %s with value: %s",position,numbers.get(position));
-        Log.i("Holder", message);
+        Log.i("CustomAdapter", message);
         final int number = numbers.get(position);
         Snackbar snack = Snackbar.make(v,message, LENGTH_LONG);
         snack.setAction("Undo", new View.OnClickListener() {
