@@ -1,23 +1,25 @@
 package sdu.android.programming.com.fragment_exercise_1;
 
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
+import androidx.core.view.GravityCompat;
+
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+
 import android.view.MenuItem;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     FragmentManager manager;
     Fragment currentFragment;
-
-    boolean top = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +39,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_view_top, new WhiteFragment()).addToBackStack(null).commit();
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_view_bottom, new WhiteFragment()).addToBackStack(null).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment, new WhiteFragment()).addToBackStack(null).commit();
         }
 
     }
@@ -68,16 +69,15 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_blue) {
             currentFragment = new BlueFragment();
         }
-        if (top) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_view_top, currentFragment).addToBackStack(null).commit();
-            top = false;
-        } else {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_view_bottom, currentFragment).addToBackStack(null).commit();
-            top = true;
-        }
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment, currentFragment).addToBackStack(null).commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
     }
 }

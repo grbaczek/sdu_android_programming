@@ -2,8 +2,9 @@ package sdu.android.programming.com.fragment_exercise_1;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -58,6 +59,18 @@ public class GreenFragment extends Fragment {
         //DO NOTHING
         super.onPause();
         Log.i("fragment_event", "GreenFragment onPause");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.i("fragment_event", "GreenFragment onSaveInstanceState");
+    }
+
+    @Override
+    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+        Log.i("fragment_event", "GreenFragment onViewStateRestored");
     }
 
     @Override
