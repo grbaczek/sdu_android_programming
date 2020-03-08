@@ -1,0 +1,2 @@
+rootProject.name='Fragment exercise 1 no app bar'
+include ':app'
