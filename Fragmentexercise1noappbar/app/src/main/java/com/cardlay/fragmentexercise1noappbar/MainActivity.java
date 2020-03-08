@@ -47,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Button btnRed = findViewById(R.id.btnRed);
+        btnRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateFragment(new RedFragment());
+            }
+        });
         btnGreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
