@@ -60,11 +60,9 @@ public class MainActivity extends AppCompatActivity implements HeadlinesFragment
             args.putInt(ArticleFragment.ARG_POSITION, position);
             newFragment.setArguments(args);
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
             // Replace whatever is in the fragment_container view with this fragment,
             // and add the transaction to the back stack so the user can navigate back
             transaction.replace(R.id.fragment_container, newFragment);
-            transaction.addToBackStack(null);
 
             // Commit the transaction
             transaction.commit();
