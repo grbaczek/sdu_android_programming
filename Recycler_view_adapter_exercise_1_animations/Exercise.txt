@@ -1,0 +1,13 @@
+Exercise 4
+RecyclerView Adapters (and Snackbars)
+
+make a recyclerview and a custom adapter.
+populate the recyclerview with random numbers
+
+create a custom layout for the items in your recyclerview
+
+Log the actions of the recyclerview
+
+Make items in the recyclerview clickable. On click the item should be removed
+Create a snackbar with the option of restoring the item to the recyclerview
+
