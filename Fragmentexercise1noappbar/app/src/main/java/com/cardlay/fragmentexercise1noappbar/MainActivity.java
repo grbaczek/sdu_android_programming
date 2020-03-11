@@ -22,7 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment, new WhiteFragment()).addToBackStack(null).commit();
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.main_fragment, new WhiteFragment())
+                    //.addToBackStack(null)
+                    .commit();
         }
 
         Button btnWhite = findViewById(R.id.btnWhite);
@@ -62,7 +66,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateFragment(Fragment currentFragment) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_fragment, currentFragment).addToBackStack(null).commit();
+        if(currentFragment instanceof GreenFragment) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.main_fragment, currentFragment)
+                    .addToBackStack(null)
+                    .commit();
+        }
+        else{
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.main_fragment, currentFragment)
+                    .commit();
+        }
     }
 
     @Override
