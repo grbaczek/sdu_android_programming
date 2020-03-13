@@ -66,19 +66,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateFragment(Fragment currentFragment) {
-        if(currentFragment instanceof GreenFragment) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.main_fragment, currentFragment)
-                    .addToBackStack(null)
-                    .commit();
-        }
-        else{
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.main_fragment, currentFragment)
-                    .commit();
-        }
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.main_fragment, currentFragment)
+                .addToBackStack(null)
+                .commit();
     }
 
     @Override
