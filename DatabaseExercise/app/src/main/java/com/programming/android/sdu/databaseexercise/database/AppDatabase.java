@@ -13,7 +13,6 @@ import android.content.Context;
 public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase INSTANCE;
-
     public abstract UserDao userDao();
 
     public static AppDatabase getAppDatabase(Context context) {
@@ -26,9 +25,5 @@ public abstract class AppDatabase extends RoomDatabase {
                             .build();
         }
         return INSTANCE;
-    }
-
-    public static void destroyInstance() {
-        INSTANCE = null;
     }
 }

@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateFragment(Fragment currentFragment) {
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.main_fragment, currentFragment)
+                .add(R.id.main_fragment, currentFragment)
                 .addToBackStack(null)
                 .commit();
     }
