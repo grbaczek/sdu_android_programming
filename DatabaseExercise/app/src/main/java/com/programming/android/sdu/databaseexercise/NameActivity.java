@@ -13,8 +13,6 @@ public class NameActivity extends BaseActivity {
 
     private EditText etYourName;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
