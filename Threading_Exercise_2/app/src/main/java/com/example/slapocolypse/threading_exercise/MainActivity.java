@@ -1,14 +1,13 @@
 package com.example.slapocolypse.threading_exercise;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.widget.TextSwitcher;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.IOException;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -16,20 +15,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     //Example of using Butterknife in your application
-    @BindView(R.id.joke_holder)
-    TextSwitcher textSwitcher;
-
-    //Retrofit stuff
-    Retrofit retrofit;
 
     final String url = "http://api.icndb.com/";
-
+    TextSwitcher textSwitcher;
+    //Retrofit stuff
+    Retrofit retrofit;
     JokeService jokeService;
 
     //Thread Stuff
     Thread workerThread;
 
-        //Semaphore for keeping track of thread
+    //Semaphore for keeping track of thread
     volatile boolean running = true;
 
     @Override
@@ -37,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //Activate butterknife, binding to this activity
-        ButterKnife.bind(this);
+        textSwitcher = findViewById(R.id.joke_holder);
 
         //Declares standard animations for textSwitcher
         textSwitcher.setInAnimation(this, android.R.anim.slide_in_left);
