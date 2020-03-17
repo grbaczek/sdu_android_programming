@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
     //Example of using Butterknife in your application
     @BindView(R.id.joke_holder)
     TextSwitcher textSwitcher;
-    final String url = "http://api.icndb.com/";
-
     //Thread Stuff
     Thread workerThread;
 
@@ -26,23 +24,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //Activate butterknife, binding to this activity
         ButterKnife.bind(this);
-
         //Declares standard animations for textSwitcher
         textSwitcher.setInAnimation(this, android.R.anim.slide_in_left);
         textSwitcher.setOutAnimation(this, android.R.anim.slide_out_right);
-
-
         //Create a thread
         workerThread = new Thread(new Runnable() {
             @Override
             public void run() {
                 //Make sure the thread is still supposed to run.
                 while (running) {
-
-
                     final String randomString = random();
                     //new runnable for changing text in textswitcher
                     textSwitcher.post(new Runnable() {
@@ -54,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //Have thread sleep for 10 seconds (10.000 ms)
                     try {
-                        Thread.sleep(10000);
+                        Thread.sleep(5000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }

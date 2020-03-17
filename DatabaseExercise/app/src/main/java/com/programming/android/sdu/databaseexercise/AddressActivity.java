@@ -22,6 +22,7 @@ public class AddressActivity extends BaseActivity {
         Intent i = getIntent();
         name = i.getStringExtra(Constants.NAME_KEY);
         Log.i(Constants.TAG, "AddressActivity onCreate");
+        Log.i(Constants.TAG_THREADING, "AddressActivity onCreate- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
         etYourAddress = (EditText)findViewById(R.id.etYourAddress);
 
         ((Button) findViewById(R.id.btnNext)).setOnClickListener(new View.OnClickListener() {

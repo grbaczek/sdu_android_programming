@@ -18,6 +18,8 @@ public class NameActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
         Log.i(Constants.TAG, "NameActivity onCreate");
+        Log.i(Constants.TAG_THREADING, "NameActivity onCreate- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
+
         etYourName = (EditText)findViewById(R.id.etYourName);
 
         ((Button) findViewById(R.id.btnNext)).setOnClickListener(new View.OnClickListener() {

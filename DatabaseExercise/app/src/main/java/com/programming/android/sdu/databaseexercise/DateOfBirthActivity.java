@@ -1,6 +1,7 @@
 package com.programming.android.sdu.databaseexercise;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -20,6 +21,8 @@ public class DateOfBirthActivity extends BaseActivity {
     private DatePicker dpDateOfBirth;
     private String name;
     private String address;
+    private Button btnNext;
+    private Button btnPrevious;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +34,16 @@ public class DateOfBirthActivity extends BaseActivity {
         dpDateOfBirth = (DatePicker) findViewById(R.id.dateOfBirthPicker);
         dpDateOfBirth.updateDate(1986, 4, 14);
         Log.i(Constants.TAG, "DateOfBirthActivity onCreate");
-        ((Button) findViewById(R.id.btnNext)).setOnClickListener(new View.OnClickListener() {
+        Log.i(Constants.TAG_THREADING, "DateOfBirthActivity onCreate- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
+        btnNext = findViewById(R.id.btnNext);
+        btnPrevious = findViewById(R.id.btnBack);
+        btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 redirectToNextActivity();
             }
         });
-        ((Button) findViewById(R.id.btnBack)).setOnClickListener(new View.OnClickListener() {
+        btnPrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finishActivity();
@@ -48,6 +54,19 @@ public class DateOfBirthActivity extends BaseActivity {
             calendar.setTimeInMillis(currentUser.dateOfBirth * 1000);
             dpDateOfBirth.updateDate(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH));
         }
+        //DONT DO IT LIKE THIS!!!!!!!
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(6000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Log.i(Constants.TAG_THREADING, "DateOfBirthActivity setting the new date");
+                dpDateOfBirth.updateDate(1990,0,1);
+            }
+        }).start();
        // throw new RuntimeException();
     }
 
@@ -103,6 +122,21 @@ public class DateOfBirthActivity extends BaseActivity {
 
     private void finishActivity() {
         finish();
+    }
+
+    class myAsyncTask extends AsyncTask<String,Integer, String>
+    {
+        @Override
+        protected String doInBackground(String... strings) {
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+
+            super.onPostExecute(s);
+        }
     }
 
 }
