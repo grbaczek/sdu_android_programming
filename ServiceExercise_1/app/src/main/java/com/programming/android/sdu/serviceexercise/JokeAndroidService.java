@@ -6,6 +6,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import androidx.annotation.Nullable;
 import android.text.Html;
+import android.util.Log;
 
 import java.io.IOException;
 
@@ -33,8 +34,8 @@ public class JokeAndroidService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.i("service_exrecise", "JokeAndroidService onCreate- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
         jokeCounter = 0;
-
         running = true;
         Retrofit retrofit = new Retrofit.Builder().baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -74,6 +75,7 @@ public class JokeAndroidService extends Service {
     }
 
     public IBinder onBind(Intent intent) {
+        Log.i("service_exrecise", "JokeAndroidService onBind- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
         return binder;
     }
 
@@ -92,6 +94,7 @@ public class JokeAndroidService extends Service {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        Log.i("service_exrecise", "JokeAndroidService onDestroy- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
         super.onDestroy();
 
     }

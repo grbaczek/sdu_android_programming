@@ -45,6 +45,8 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent = new Intent(this, JokeAndroidService.class);
+        startService(intent);
         LocalBroadcastManager.getInstance(this).registerReceiver(receiver, new IntentFilter(
                 JokeAndroidService.NOTIFICATION));
     }

@@ -6,6 +6,7 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.text.Html;
+import android.util.Log;
 
 import java.io.IOException;
 
@@ -34,11 +35,15 @@ public class JokeAndroidService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        Log.i("service_exrecise", "JokeAndroidService onCreate- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
+
         jokeCounter = 0;
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        Log.i("service_exrecise", "JokeAndroidService onStartCommand- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
+
         if(!running) {
             running = true;
             Retrofit retrofit = new Retrofit.Builder().baseUrl(url)
@@ -79,6 +84,8 @@ public class JokeAndroidService extends Service {
 
     @Override
     public void onDestroy() {
+        Log.i("service_exrecise", "JokeAndroidService onDestroy- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
+
         running = false;
         try {
             workerThread.join();

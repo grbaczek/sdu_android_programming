@@ -9,6 +9,7 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
@@ -67,6 +68,8 @@ public class BaseActivity extends AppCompatActivity {
         @Override
         public void onServiceConnected(ComponentName className,
                                        IBinder service) {
+            Log.i("service_exrecise",  "ServiceConnection onServiceConnected- Current Thread ID- " + Thread.currentThread().getId() + " For Thread- " + Thread.currentThread().getName());
+
             // We've bound to LocalService, cast the IBinder and get LocalService instance
             JokeAndroidService.JokeAndroidServiceBinder binder = (JokeAndroidService.JokeAndroidServiceBinder) service;
             jokeAndroidService = binder.getService();
