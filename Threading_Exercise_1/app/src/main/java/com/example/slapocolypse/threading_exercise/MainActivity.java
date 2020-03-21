@@ -10,7 +10,6 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Example of using Butterknife in your application
     TextSwitcher textSwitcher;
     //Thread Stuff
     Thread workerThread;

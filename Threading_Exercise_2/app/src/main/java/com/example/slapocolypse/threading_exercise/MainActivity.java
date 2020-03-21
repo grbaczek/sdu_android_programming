@@ -47,13 +47,6 @@ public class MainActivity extends AppCompatActivity {
         //create retrofit instance of JokeService
         jokeService = retrofit.create(JokeService.class);
 
-
-        /*try {
-            jokeService.randomJoke().execute().body();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
         //Create a thread
         workerThread = new Thread(new Runnable() {
             @Override

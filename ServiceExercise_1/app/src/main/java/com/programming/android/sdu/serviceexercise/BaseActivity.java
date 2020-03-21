@@ -1,20 +1,17 @@
 package com.programming.android.sdu.serviceexercise;
 
-import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.View;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
-
-import butterknife.BindView;
-import butterknife.OnClick;
 
 /**
  * Created by grzegorzbaczek on 18/03/2018.
@@ -22,9 +19,7 @@ import butterknife.OnClick;
 
 public class BaseActivity extends AppCompatActivity {
 
-    @BindView(R.id.joke_holder)
     TextSwitcher textSwitcher;
-    @BindView(R.id.tvJokeCounter)
     TextView tvJokeCounter;
 
     protected JokeAndroidService jokeAndroidService;
@@ -34,9 +29,30 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         Intent intent = new Intent(this, JokeAndroidService.class);
         bindService(intent, connection, Context.BIND_AUTO_CREATE);
+    }
+
+    protected void initViews(){
+        textSwitcher = findViewById(R.id.joke_holder);
+        tvJokeCounter = findViewById(R.id.tvJokeCounter);
+
+        findViewById(R.id.btnUpdateCounter).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBound){
+                    tvJokeCounter.setText(String.valueOf(jokeAndroidService.getJokeCounter()));
+                }
+            }
+        });
+        findViewById(R.id.btnUpdateJoke).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mBound){
+                    textSwitcher.setText(jokeAndroidService.getNewestJoke());
+                }
+            }
+        });
     }
 
     @Override
@@ -63,14 +79,13 @@ public class BaseActivity extends AppCompatActivity {
         }
     };
 
-    @OnClick(R.id.btnUpdateCounter)
+
     public void updateCounterClicked(){
         if(mBound){
             tvJokeCounter.setText(String.valueOf(jokeAndroidService.getJokeCounter()));
         }
     }
 
-    @OnClick(R.id.btnUpdateJoke)
     public void updateJokeClicked(){
         if(mBound){
             textSwitcher.setText(jokeAndroidService.getNewestJoke());
