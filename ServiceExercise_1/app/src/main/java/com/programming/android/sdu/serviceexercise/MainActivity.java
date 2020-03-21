@@ -23,6 +23,13 @@ public class MainActivity extends BaseActivity {
                 startActivity(i);
             }
         });
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
     }
 
     @Override

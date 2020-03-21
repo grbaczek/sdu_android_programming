@@ -3,9 +3,9 @@ package com.programming.android.sdu.serviceexercise;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.text.Html;
-import android.util.Log;
 
 import java.io.IOException;
 
@@ -74,7 +74,7 @@ public class JokeAndroidService extends Service {
         Intent intent = new Intent(NOTIFICATION);
         intent.putExtra(JOKE_TEXT, jokeText);
         intent.putExtra(JOKE_COUNTER, jokeCounter);
-        sendBroadcast(intent);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);;
     }
 
     @Override

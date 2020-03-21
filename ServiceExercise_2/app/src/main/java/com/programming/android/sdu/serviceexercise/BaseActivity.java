@@ -5,12 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.View;
 import android.widget.TextSwitcher;
 import android.widget.TextView;
-
-import butterknife.BindView;
 
 /**
  * Created by grzegorzbaczek on 18/03/2018.
@@ -18,9 +19,7 @@ import butterknife.BindView;
 
 public class BaseActivity extends AppCompatActivity {
 
-    @BindView(R.id.joke_holder)
     TextSwitcher textSwitcher;
-    @BindView(R.id.tvJokeCounter)
     TextView tvJokeCounter;
 
 
@@ -37,11 +36,16 @@ public class BaseActivity extends AppCompatActivity {
         }
     };
 
+    protected void initViews(){
+        textSwitcher = findViewById(R.id.joke_holder);
+        tvJokeCounter = findViewById(R.id.tvJokeCounter);
+    }
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        registerReceiver(receiver, new IntentFilter(
+        LocalBroadcastManager.getInstance(this).registerReceiver(receiver, new IntentFilter(
                 JokeAndroidService.NOTIFICATION));
     }
 
@@ -58,6 +62,6 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(receiver);
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(receiver);
     }
 }
