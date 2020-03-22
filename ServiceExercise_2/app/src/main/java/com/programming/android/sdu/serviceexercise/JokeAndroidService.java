@@ -79,7 +79,7 @@ public class JokeAndroidService extends Service {
         Intent intent = new Intent(NOTIFICATION);
         intent.putExtra(JOKE_TEXT, jokeText);
         intent.putExtra(JOKE_COUNTER, jokeCounter);
-        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);;
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
 
     @Override
