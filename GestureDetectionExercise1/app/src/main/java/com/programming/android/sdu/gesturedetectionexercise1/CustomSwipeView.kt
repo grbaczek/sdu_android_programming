@@ -1,5 +1,6 @@
 package com.programming.android.sdu.gesturedetectionexercise1
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
