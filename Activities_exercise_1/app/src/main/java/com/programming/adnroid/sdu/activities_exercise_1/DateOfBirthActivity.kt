@@ -26,8 +26,10 @@ class DateOfBirthActivity : AppCompatActivity() {
         dpDateOfBirth = findViewById<View>(R.id.dateOfBirthPicker) as DatePicker
         dpDateOfBirth!!.updateDate(1986, 4, 14)
         Log.i(Constants.TAG, "DateOfBirthActivity onCreate")
-        (findViewById<View>(R.id.btnNext) as Button).setOnClickListener { redirectToNextActivity() }
-        (findViewById<View>(R.id.btnBack) as Button).setOnClickListener { finishActivity() }
+        (findViewById<Button>(R.id.btnNext)).setOnClickListener {
+            redirectToNextActivity() }
+        (findViewById<Button>(R.id.btnBack)).setOnClickListener {
+            finishActivity() }
         // throw new RuntimeException();
     }
 

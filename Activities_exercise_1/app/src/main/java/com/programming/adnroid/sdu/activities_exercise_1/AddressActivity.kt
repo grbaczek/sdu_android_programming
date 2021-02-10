@@ -17,12 +17,7 @@ class AddressActivity : AppCompatActivity() {
         setContentView(R.layout.activity_address)
         name = intent.getStringExtra(Constants.NAME_KEY)
         etYourAddress = findViewById(R.id.etYourAddress)
-        /*((Button) findViewById(R.id.btnNext)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                redirectToNextActivity();
-            }
-        });*/(findViewById<View>(R.id.btnBack) as Button).setOnClickListener { finishActivity() }
+        (findViewById<View>(R.id.btnBack) as Button).setOnClickListener { finishActivity() }
     }
 
     override fun onStart() {

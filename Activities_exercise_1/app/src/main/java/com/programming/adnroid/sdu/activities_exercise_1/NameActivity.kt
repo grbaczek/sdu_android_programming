@@ -51,8 +51,11 @@ class NameActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
+        this.apply {  }
         Log.i(Constants.TAG, "NameActivity onDestroy")
     }
+
+
 
     private fun redirectToNextActivity() {
         if (!TextUtils.isEmpty(etYourName!!.text)) {

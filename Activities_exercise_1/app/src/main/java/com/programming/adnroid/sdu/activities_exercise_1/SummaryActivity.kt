@@ -11,6 +11,7 @@ import android.widget.TextView
  * Created by grzegorzbaczek on 18/02/2018.
  */
 class SummaryActivity : AppCompatActivity() {
+
     lateinit var tvName: TextView
     lateinit var tvAddress: TextView
     lateinit var tvDate: TextView
@@ -26,7 +27,9 @@ class SummaryActivity : AppCompatActivity() {
         tvAddress.setText(intent.getStringExtra(Constants.ADDRESS_KEY))
         tvDate.setText(intent.getStringExtra(Constants.DATE_OF_BIRTH_KEY))
         Log.i(Constants.TAG, "SummaryActivity onCreate")
-        (findViewById<View>(R.id.btnBack) as Button).setOnClickListener { finishActivity() }
+        (findViewById<View>(R.id.btnBack) as Button).setOnClickListener {
+            finishActivity()
+        }
     }
 
     override fun onStart() {

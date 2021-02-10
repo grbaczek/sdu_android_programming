@@ -5,7 +5,7 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId "com.programming.adnroid.sdu.activities_exercise_1"
-        minSdkVersion 28
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
