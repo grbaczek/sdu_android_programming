@@ -18,7 +18,9 @@ class AddressActivity : AppCompatActivity() {
         name = intent.getStringExtra(Constants.NAME_KEY)
         etYourAddress = findViewById(R.id.etYourAddress)
         (findViewById<View>(R.id.btnBack) as Button).setOnClickListener { finishActivity() }
+        Log.i(Constants.TAG, "AddressActivity onCreate")
     }
+
 
     override fun onStart() {
         super.onStart()

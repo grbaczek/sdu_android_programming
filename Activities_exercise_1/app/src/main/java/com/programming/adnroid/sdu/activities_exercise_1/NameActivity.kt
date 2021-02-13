@@ -10,13 +10,18 @@ import android.widget.Button
 import android.widget.EditText
 
 class NameActivity : AppCompatActivity() {
+
+
     private var etYourName: EditText? = null
+    private lateinit var etYourNameLateinit: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_name)
-        Log.i(Constants.TAG, "NameActivity onCreate")
+
         etYourName = findViewById<View>(R.id.etYourName) as EditText
-        (findViewById<View>(R.id.btnNext) as Button).setOnClickListener { redirectToNextActivity() }
+        etYourNameLateinit = findViewById<View>(R.id.etYourName) as EditText
+
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
