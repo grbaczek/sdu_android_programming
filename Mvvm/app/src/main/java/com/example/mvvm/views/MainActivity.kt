@@ -27,14 +27,10 @@ class MainActivity : AppCompatActivity() {
             userViewModel.randomJoke()
         }
 
-        // Code is called data change
-        val jokeObserver = Observer<Joke> { joke ->
-            // Update UI
+        // Observe the LiveData and update the view on change
+        userViewModel.joke.observe(this, {  joke ->
             textView.text = joke.text
-        }
-
-        // Observe the LiveData. Passing this activity as the LifecycleOwner and the jokeObserver.
-        userViewModel.joke.observe(this, jokeObserver)
+        })
     }
 
 }
