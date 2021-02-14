@@ -1,7 +1,7 @@
-package com.programming.android.sdu.gesturedetectionexercise1
+package com.programming.android.sdu.piechartexample
 
-import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -17,7 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        Assert.assertEquals("com.programming.android.sdu.gesturedetectionexercise1", appContext.packageName)
+        Assert.assertEquals("com.programming.android.sdu.piechartexample", appContext.packageName)
     }
 }
-
