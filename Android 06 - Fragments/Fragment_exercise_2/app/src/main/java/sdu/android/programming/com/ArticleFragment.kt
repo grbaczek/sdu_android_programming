@@ -13,67 +13,65 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package sdu.android.programming.com;
+package sdu.android.programming.com
 
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+class ArticleFragment : Fragment() {
 
-import androidx.fragment.app.Fragment;
+    private var mCurrentPosition = -1
+    private lateinit var tvArticle: TextView
 
-public class ArticleFragment extends Fragment {
-    final static String ARG_POSITION = "position";
-    int mCurrentPosition = -1;
-    private TextView tvArticle;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, 
-        Bundle savedInstanceState) {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
 
         // If activity recreated (such as from screen rotate), restore
         // the previous article selection set by onSaveInstanceState().
         // This is primarily necessary when in the two-pane layout.
         if (savedInstanceState != null) {
-            mCurrentPosition = savedInstanceState.getInt(ARG_POSITION);
+            mCurrentPosition = savedInstanceState.getInt(ARG_POSITION)
         }
 
         // Inflate the layout for this fragment
-        tvArticle = (TextView)inflater.inflate(R.layout.article_view, container, false);
-        return tvArticle;
+        tvArticle = inflater.inflate(R.layout.article_view, container, false) as TextView
+        return tvArticle
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
+    override fun onStart() {
+        super.onStart()
 
         // During startup, check if there are arguments passed to the fragment.
         // onStart is a good place to do this because the layout has already been
         // applied to the fragment at this point so we can safely call the method
         // below that sets the article text.
-        Bundle args = getArguments();
+        val args = arguments
         if (args != null) {
             // Set article based on argument passed in
-            updateArticleView(args.getInt(ARG_POSITION));
+            updateArticleView(args.getInt(ARG_POSITION))
         } else if (mCurrentPosition != -1) {
             // Set article based on saved instance state defined during onCreateView
-            updateArticleView(mCurrentPosition);
+            updateArticleView(mCurrentPosition)
         }
     }
 
-    public void updateArticleView(int position) {
-
-        tvArticle.setText(Ipsum.Articles[position]);
-        mCurrentPosition = position;
+    fun updateArticleView(position: Int) {
+        tvArticle.text = Ipsum.Articles?.get(position)
+        mCurrentPosition = position
     }
 
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
 
         // Save the current article selection in case we need to recreate the fragment
-        outState.putInt(ARG_POSITION, mCurrentPosition);
+        outState.putInt(ARG_POSITION, mCurrentPosition)
+    }
+
+    companion object {
+        const val ARG_POSITION: String = "position"
     }
 }
