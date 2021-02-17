@@ -1,3 +1,3 @@
 package com.example.mvvm.models
 
-class Joke(var text: String)
+data class Joke(val text: String)
