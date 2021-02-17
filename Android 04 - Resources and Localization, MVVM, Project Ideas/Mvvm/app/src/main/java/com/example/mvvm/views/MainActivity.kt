@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.mvvm.R
 import com.example.mvvm.models.Joke
 import com.example.mvvm.viewmodels.UserViewModel
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Create the view model which provides data for the view
-        val userViewModel = UserViewModel()
+        val userViewModel: UserViewModel by viewModels()
 
         textView = findViewById(R.id.textView)
         button = findViewById(R.id.button)
