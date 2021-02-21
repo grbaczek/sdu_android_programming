@@ -1,4 +1,4 @@
-package sdu.android.programming.com.recycler_view_adapter_exercise_1
+package sdu.android.programming.com.recycler_view_adapter_exercise_1.views
 
 import android.util.Log
 import android.view.LayoutInflater
@@ -6,12 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import java.util.*
+import sdu.android.programming.com.recycler_view_adapter_exercise_1.R
+import sdu.android.programming.com.recycler_view_adapter_exercise_1.models.NumberModel
 
 /**
  * Created by Jakob on 27/02/2018.
  */
-class CustomAdapter(var numbers: ArrayList<Int>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+
+    private lateinit var numbers: ArrayList<NumberModel>
+
+    fun setNumbers(numberList: ArrayList<NumberModel>) {
+        numbers = numberList
+        notifyDataSetChanged()
+    }
+
     /**
      * Creates the viewholder
      * @param parent
@@ -32,7 +41,7 @@ class CustomAdapter(var numbers: ArrayList<Int>) : RecyclerView.Adapter<CustomAd
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val message = String.format("Setting textview for position: %s", position)
         Log.i("CustomAdapter", message)
-        holder.textView.text = numbers[position].toString()
+        holder.textView.text = numbers.get(position).value.toString()
     }
 
     override fun getItemCount(): Int {

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinator"
-    tools:context="sdu.android.programming.com.recycler_view_adapter_exercise_1.MainActivity"
+    tools:context="sdu.android.programming.com.recycler_view_adapter_exercise_1.views.MainActivity"
     >
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
