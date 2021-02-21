@@ -41,8 +41,6 @@ class CustomAdapter(var numbers: ArrayList<Int>) : RecyclerView.Adapter<CustomAd
     }
 
     class ViewHolder(frameLayout: View?, // each data item is just a string in this case
-                     var textView: TextView) : RecyclerView.ViewHolder(frameLayout!!) {
-        var frameLayout: View? = null
-    }
+                     val textView: TextView) : RecyclerView.ViewHolder(frameLayout!!)
 
 }

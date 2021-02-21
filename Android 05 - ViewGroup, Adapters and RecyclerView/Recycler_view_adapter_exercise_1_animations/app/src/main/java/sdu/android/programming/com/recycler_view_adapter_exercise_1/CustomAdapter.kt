@@ -44,10 +44,8 @@ class CustomAdapter(var numbers: ArrayList<Int>) : RecyclerView.Adapter<CustomAd
         return numbers.size
     }
 
-    class ViewHolder(frameLayout: View?, // each data item is just a string in this case
-                     var textView: TextView) : RecyclerView.ViewHolder(frameLayout!!) {
-        var frameLayout: View? = null
-    }
+    data class ViewHolder(val frameLayout: View?, // each data item is just a string in this case
+                     val textView: TextView) : RecyclerView.ViewHolder(frameLayout!!)
 
     /**
      * Deletes item at position
