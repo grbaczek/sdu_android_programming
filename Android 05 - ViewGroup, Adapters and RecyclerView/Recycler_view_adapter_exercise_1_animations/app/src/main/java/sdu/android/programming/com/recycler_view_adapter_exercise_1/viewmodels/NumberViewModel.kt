@@ -37,9 +37,4 @@ class NumberViewModel : ViewModel() {
         numbers.value = numbers.value
     }
 
-    fun <T> MutableLiveData<List<T>>.add(item: T) {
-        val updatedItems = this.value as ArrayList
-        updatedItems.add(item)
-        this.value = updatedItems }
-
 }

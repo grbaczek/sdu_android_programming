@@ -16,6 +16,10 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     private lateinit var numbers: ArrayList<NumberModel>
 
+    /**
+     * Sets the numbers for the adapter and notify that data has changed
+     * @param numberList
+     */
     fun setNumbers(numberList: ArrayList<NumberModel>) {
         numbers = numberList
         notifyDataSetChanged()

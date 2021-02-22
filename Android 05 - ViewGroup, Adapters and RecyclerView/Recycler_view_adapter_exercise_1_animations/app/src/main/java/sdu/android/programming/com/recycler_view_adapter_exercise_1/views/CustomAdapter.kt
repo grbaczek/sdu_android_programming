@@ -22,6 +22,10 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder> {
         this.listener = listener
     }
 
+    /**
+     * Sets the numbers for the adapter and notify that data has changed
+     * @param numberList
+     */
     fun setNumbers(numberList: ArrayList<NumberModel>) {
         numbers = numberList
         notifyDataSetChanged()
@@ -79,6 +83,9 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder> {
         listener.deleteNumberOnClick(position)
     }
 
+    /**
+     * Interface to communicate with the activity as listener
+     */
     interface ViewHolderListener {
         fun deleteNumberOnClick(position: Int)
         fun addNumberOnClick(position: Int, number: Int)
