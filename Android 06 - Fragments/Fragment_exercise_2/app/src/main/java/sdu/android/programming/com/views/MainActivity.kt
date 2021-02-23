@@ -1,9 +1,12 @@
-package sdu.android.programming.com
+package sdu.android.programming.com.views
 
 import android.os.Bundle
 import android.view.View
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import sdu.android.programming.com.HeadlinesFragment.OnHeadlineSelectedListener
+import sdu.android.programming.com.views.HeadlinesFragment.OnHeadlineSelectedListener
+import sdu.android.programming.com.R
+import sdu.android.programming.com.viewmodels.ArticleViewModel
 
 class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
 
