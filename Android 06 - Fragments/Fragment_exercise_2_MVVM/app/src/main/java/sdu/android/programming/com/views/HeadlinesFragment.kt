@@ -13,13 +13,6 @@ import sdu.android.programming.com.viewmodels.ArticleViewModel
 class HeadlinesFragment : ListFragment() {
 
     private val articleViewModel: ArticleViewModel by activityViewModels()
-    private var mCallback: OnHeadlineSelectedListener? = null
-
-    // The container Activity must implement this interface so the frag can deliver messages
-    interface OnHeadlineSelectedListener {
-        /** Called by HeadlinesFragment when a list item is selected  */
-        fun onArticleSelected(position: Int)
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,31 +29,18 @@ class HeadlinesFragment : ListFragment() {
 
         // When in two-pane layout, set the listview to highlight the selected list item
         // (We do this during onStart because at the point the listview is available.)
-        if (fragmentManager?.findFragmentById(R.id.article_fragment) != null) {
+        if (parentFragmentManager.findFragmentById(R.id.article_fragment) != null) {
             listView.choiceMode = ListView.CHOICE_MODE_SINGLE
-        }
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-
-        // This makes sure that the container activity has implemented
-        // the callback interface. If not, it throws an exception.
-        mCallback = try {
-            activity as OnHeadlineSelectedListener?
-        } catch (e: ClassCastException) {
-            throw ClassCastException(
-                context.toString()
-                        + " must implement OnHeadlineSelectedListener"
-            )
         }
     }
 
     override fun onListItemClick(l: ListView, v: View, position: Int, id: Long) {
         // Notify the parent activity of selected item
-        mCallback?.onArticleSelected(position)
+        //mCallback?.onArticleSelected(position)
 
         // Set the item as checked to be highlighted when in two-pane layout
+        articleViewModel.selectArticleAt(position)
         listView.setItemChecked(position, true)
+        //listView.setItemChecked(position, true)
     }
 }

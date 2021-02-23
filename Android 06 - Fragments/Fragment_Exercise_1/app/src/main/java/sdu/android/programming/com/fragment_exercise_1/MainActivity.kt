@@ -28,8 +28,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
         val navigationView = findViewById<View?>(R.id.nav_view) as NavigationView
         navigationView.setNavigationItemSelectedListener(this)
+
+
+
+
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction().replace(R.id.main_fragment, WhiteFragment()).addToBackStack(null).commit()
+
+            val fragmentTransaction = supportFragmentManager.beginTransaction()
+
+            fragmentTransaction.replace(R.id.main_fragment, WhiteFragment())
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+
         }
     }
 

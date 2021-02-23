@@ -39,7 +39,6 @@ class WhiteFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val v = inflater.inflate(R.layout.fragment_white, container, false)
-        Log.i("fragment_exercise", "WhiteFragment onCreateView")
         return v
     }
 

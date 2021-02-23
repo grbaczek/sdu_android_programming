@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateFragment(currentFragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.main_fragment, currentFragment)
+            .replace(R.id.main_fragment, currentFragment)
             .addToBackStack(null)
             .commit()
     }

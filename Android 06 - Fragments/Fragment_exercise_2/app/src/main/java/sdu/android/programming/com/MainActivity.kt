@@ -1,10 +1,9 @@
-package sdu.android.programming.com.views
+package sdu.android.programming.com
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import sdu.android.programming.com.R
-import sdu.android.programming.com.views.HeadlinesFragment.OnHeadlineSelectedListener
+import sdu.android.programming.com.HeadlinesFragment.OnHeadlineSelectedListener
 
 class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
 
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
 
             // Add the fragment to the 'fragment_container' FrameLayout
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container, firstFragment).commit()
+                    .add(R.id.fragment_container, firstFragment).commit()
         }
     }
 
@@ -41,8 +40,7 @@ class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
         // The user selected the headline of an article from the HeadlinesFragment
 
         // Capture the article fragment from the activity layout
-        val articleFrag =
-            supportFragmentManager.findFragmentById(R.id.article_fragment) as ArticleFragment?
+        val articleFrag = supportFragmentManager.findFragmentById(R.id.article_fragment) as ArticleFragment?
         if (articleFrag != null) {
             // If article frag is available, we're in two-pane layout...
 
@@ -65,5 +63,4 @@ class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
             transaction.commit()
         }
     }
-    
 }
