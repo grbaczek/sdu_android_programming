@@ -18,7 +18,7 @@ class HeadlinesFragment : ListFragment() {
     // The container Activity must implement this interface so the frag can deliver messages
     interface OnHeadlineSelectedListener {
         /** Called by HeadlinesFragment when a list item is selected  */
-        open fun onArticleSelected(position: Int)
+        fun onArticleSelected(position: Int)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,7 @@ class HeadlinesFragment : ListFragment() {
         val layout = android.R.layout.simple_list_item_activated_1
 
         // Create an array adapter for the list view, using the Ipsum headlines array
-        listAdapter = ArrayAdapter(activity, layout, articleViewModel.articleHeadLines)
+        listAdapter = ArrayAdapter(activity, layout, articleViewModel.getHeadlines())
     }
 
     override fun onStart() {
@@ -49,8 +49,10 @@ class HeadlinesFragment : ListFragment() {
         mCallback = try {
             activity as OnHeadlineSelectedListener?
         } catch (e: ClassCastException) {
-            throw ClassCastException(context.toString()
-                    + " must implement OnHeadlineSelectedListener")
+            throw ClassCastException(
+                context.toString()
+                        + " must implement OnHeadlineSelectedListener"
+            )
         }
     }
 

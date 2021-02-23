@@ -5,10 +5,10 @@ import sdu.android.programming.com.models.Article
 import sdu.android.programming.com.models.ArticleManager
 
 
-class ArticleViewModel: ViewModel() {
+class ArticleViewModel : ViewModel() {
 
-    lateinit var articles: ArrayList<Article>
-    lateinit var articleHeadLines: Array<String?>
+    private lateinit var articles: ArrayList<Article>
+    private lateinit var articleHeadLines: Array<String?>
     private val articleManager = ArticleManager()
 
     init {
@@ -20,7 +20,11 @@ class ArticleViewModel: ViewModel() {
         return articles
     }
 
-    fun loadArticleHeadlines() {
+    fun getHeadlines(): Array<String?> {
+        return articleHeadLines
+    }
+
+    private fun loadArticleHeadlines() {
         articleHeadLines = articleManager.getArticleHeadlines()
     }
 

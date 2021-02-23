@@ -1,6 +1,5 @@
 package sdu.android.programming.com.models
 
-
 class ArticleManager {
 
     lateinit var articles: ArrayList<Article>
