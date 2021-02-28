@@ -1,30 +1,24 @@
-package com.programming.android.sdu.databaseexercise.database;
+package com.programming.android.sdu.databaseexercise.database
 
-import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Delete;
-import android.arch.persistence.room.Insert;
-import android.arch.persistence.room.Query;
-import android.arch.persistence.room.Update;
-
-import java.util.List;
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+import androidx.room.Update
 
 /**
  * Created by grzegorzbaczek on 10/03/2018.
  */
-
 @Dao
-public interface UserDao {
-
-    @Query("SELECT * FROM user where uid = 1")
-    User getUser();
+interface UserDao {
+    @get:Query("SELECT * FROM user where uid = 1")
+    val user: User?
 
     @Update
-    int update(User user);
+    fun update(user: User?): Int
 
     @Insert
-    void insert(User user);
+    fun insert(user: User?)
 
     @Query("SELECT COUNT(*) from user")
-    int countUsers();
-
+    fun countUsers(): Int
 }

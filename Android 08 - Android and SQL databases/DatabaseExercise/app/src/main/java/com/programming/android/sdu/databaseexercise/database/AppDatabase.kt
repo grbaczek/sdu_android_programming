@@ -1,29 +1,31 @@
-package com.programming.android.sdu.databaseexercise.database;
+package com.programming.android.sdu.databaseexercise.database
 
-import android.arch.persistence.room.Database;
-import android.arch.persistence.room.Room;
-import android.arch.persistence.room.RoomDatabase;
-import android.content.Context;
+
+import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 
 /**
  * Created by grzegorzbaczek on 10/03/2018.
  */
 
-@Database(entities = {User.class}, version = 1, exportSchema = false)
-public abstract class AppDatabase extends RoomDatabase {
 
-    private static AppDatabase INSTANCE;
-    public abstract UserDao userDao();
+@Database(entities = [User::class], version = 1, exportSchema = false)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun userDao(): UserDao
 
-    public static AppDatabase getAppDatabase(Context context) {
-        if (INSTANCE == null) {
-            INSTANCE =
-                    Room.databaseBuilder(context.getApplicationContext(), AppDatabase.class, "user-database")
-                            // allow queries on the main thread.
-                            // Don't do this on a real app!
-                            .allowMainThreadQueries()
-                            .build();
+    companion object {
+        private var INSTANCE: AppDatabase? = null
+        fun getAppDatabase(context: Context): AppDatabase? {
+            if (INSTANCE == null) {
+                INSTANCE = Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, "user-database")
+                        // allow queries on the main thread.
+                        // Don't do this on a real app!
+                        .allowMainThreadQueries()
+                        .build()
+            }
+            return INSTANCE
         }
-        return INSTANCE;
     }
 }

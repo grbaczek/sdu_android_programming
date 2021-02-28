@@ -1,18 +1,16 @@
-package com.programming.android.sdu.databaseexercise.database;
+package com.programming.android.sdu.databaseexercise.database
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 /**
  * Created by grzegorzbaczek on 10/03/2018.
  */
-
 @Entity(tableName = "user")
-public class User {
+class User {
     @PrimaryKey
-    public int uid;
-    public String name;
-    public String address;
-    public long dateOfBirth;
-
+    var uid = 0
+    var name: String? = null
+    var address: String? = null
+    var dateOfBirth: Long = 0
 }
