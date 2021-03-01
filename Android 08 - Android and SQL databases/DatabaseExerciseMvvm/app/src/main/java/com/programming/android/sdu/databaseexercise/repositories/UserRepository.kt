@@ -6,7 +6,9 @@ import com.programming.android.sdu.databaseexercise.database.UserDao
 // Pass the UserDao only, as we do not need to access the whole database
 class UserRepository(private val userDao: UserDao) {
 
-    val user = userDao.getUser()
+    fun getUser(): User {
+        return userDao.getUser()
+    }
 
     fun insert(user: User) {
         userDao.insert(user)

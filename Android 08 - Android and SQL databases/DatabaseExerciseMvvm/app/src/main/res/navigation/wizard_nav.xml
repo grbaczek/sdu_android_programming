@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wizard_nav"
+    app:startDestination="@id/nameFragment">
+
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.programming.android.sdu.databaseexercise.views.NameFragment"
+        android:label="fragment_name"
+        tools:layout="@layout/fragment_name" >
+        <action
+            android:id="@+id/action_nameFragment_to_addressFragment"
+            app:destination="@id/addressFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.programming.android.sdu.databaseexercise.views.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" >
+        <action
+            android:id="@+id/action_addressFragment_to_dateOfBirthFragment"
+            app:destination="@id/dateOfBirthFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dateOfBirthFragment"
+        android:name="com.programming.android.sdu.databaseexercise.views.DateOfBirthFragment"
+        android:label="fragment_date_of_birth"
+        tools:layout="@layout/fragment_date_of_birth" >
+        <action
+            android:id="@+id/action_dateOfBirthFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.programming.android.sdu.databaseexercise.views.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+</navigation>

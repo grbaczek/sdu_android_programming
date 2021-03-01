@@ -28,6 +28,9 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     def lifecycle_version = "2.2.0"
     def room_version = "2.2.6"
 
@@ -47,7 +50,7 @@ dependencies {
     // View model
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.activity:activity-ktx:1.2.0"
-
+    implementation "androidx.fragment:fragment-ktx:1.3.0"
 }
 repositories {
     mavenCentral()
