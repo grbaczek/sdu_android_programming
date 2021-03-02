@@ -88,7 +88,7 @@ class DateOfBirthActivity : BaseActivity() {
         val sdf = SimpleDateFormat("dd-MM-yyyy")
         val formatedDate = sdf.format(calendar.time)
         intent.putExtra(Constants.DATE_OF_BIRTH_KEY, formatedDate)
-        currentUser!!.dateOfBirth = calendar.timeInMillis / 1000
+        currentUser!!.dateOfBirth = calendar.timeInMillis
         db!!.userDao().update(currentUser)
         startActivity(intent)
     }

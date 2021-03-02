@@ -23,7 +23,8 @@ class NameFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        user = userViewModel.getUser()
+        userViewModel.init()
+        user = userViewModel.currentUser!!
         binding = FragmentNameBinding.inflate(inflater, container, false)
         etYourName = binding.etYourName
         binding.btnNext.setOnClickListener{ redirectToNextActivity() }

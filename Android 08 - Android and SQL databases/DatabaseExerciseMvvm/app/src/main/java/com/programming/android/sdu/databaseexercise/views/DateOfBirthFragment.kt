@@ -23,8 +23,8 @@ class DateOfBirthFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-
-        user = userViewModel.getUser()
+        userViewModel.init()
+        user = userViewModel.currentUser!!
 
         binding = FragmentDateOfBirthBinding.inflate(inflater, container, false)
         dpDateOfBirth = binding.dateOfBirthPicker

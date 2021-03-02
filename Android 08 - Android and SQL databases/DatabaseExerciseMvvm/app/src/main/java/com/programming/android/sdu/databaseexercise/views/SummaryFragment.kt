@@ -18,11 +18,10 @@ class SummaryFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        user = userViewModel.getUser()
+        userViewModel.init()
+        user = userViewModel.currentUser!!
         binding = FragmentSummaryBinding.inflate(inflater, container, false)
-        binding.tvName.text = user.name
-        binding.tvAddress.text = user.address
-        binding.tvDateOfBirth.text = user.dateOfBirth.toString()
+        binding.user = userViewModel
         return  binding.root
     }
 

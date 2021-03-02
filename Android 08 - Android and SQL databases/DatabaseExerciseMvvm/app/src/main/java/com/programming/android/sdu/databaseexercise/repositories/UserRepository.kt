@@ -1,5 +1,8 @@
 package com.programming.android.sdu.databaseexercise.repositories
 
+import android.content.Context
+import androidx.room.Room
+import com.programming.android.sdu.databaseexercise.database.AppDatabase
 import com.programming.android.sdu.databaseexercise.database.User
 import com.programming.android.sdu.databaseexercise.database.UserDao
 

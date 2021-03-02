@@ -23,8 +23,8 @@ class AddressFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-
-        user = userViewModel.getUser()
+        userViewModel.init()
+        user = userViewModel.currentUser!!
 
         binding = FragmentAddressBinding.inflate(inflater, container, false)
         etYourAddress = binding.etYourAddress
