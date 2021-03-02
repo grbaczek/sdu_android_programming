@@ -11,10 +11,13 @@ class User {
     @JvmField
     @PrimaryKey
     var uid = 0
+
     @JvmField
     var name: String? = null
+
     @JvmField
     var address: String? = null
+
     @JvmField
     var dateOfBirth: Long = 0
 }

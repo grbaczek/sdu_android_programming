@@ -25,13 +25,12 @@ class NameFragment : Fragment() {
                               savedInstanceState: Bundle?): View? {
         userViewModel.init()
         user = userViewModel.currentUser!!
+
         binding = FragmentNameBinding.inflate(inflater, container, false)
+        binding.user = userViewModel
         etYourName = binding.etYourName
-        binding.btnNext.setOnClickListener{ redirectToNextActivity() }
-        if (!TextUtils.isEmpty(user.name)) {
-            etYourName.setText(user.name)
-        }
-        return  binding.root
+        binding.btnNext.setOnClickListener { redirectToNextActivity() }
+        return binding.root
     }
 
     private fun redirectToNextActivity() {

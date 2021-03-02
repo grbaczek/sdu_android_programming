@@ -1,11 +1,11 @@
 package com.programming.android.sdu.databaseexercise.views
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.DatePicker
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import com.programming.android.sdu.databaseexercise.R
@@ -29,15 +29,15 @@ class DateOfBirthFragment : Fragment() {
         binding = FragmentDateOfBirthBinding.inflate(inflater, container, false)
         dpDateOfBirth = binding.dateOfBirthPicker
         dpDateOfBirth.updateDate(1986, 4, 14)
-        binding.btnNext.setOnClickListener{ redirectToNextActivity() }
+        binding.btnNext.setOnClickListener { redirectToNextActivity() }
 
         if (user.dateOfBirth != 0L) {
             val calendar = Calendar.getInstance()
-            calendar.timeInMillis = user.dateOfBirth * 1000
+            calendar.timeInMillis = user.dateOfBirth
             dpDateOfBirth.updateDate(calendar[Calendar.YEAR], calendar[Calendar.MONTH], calendar[Calendar.DAY_OF_MONTH])
         }
 
-        return  binding.root
+        return binding.root
     }
 
     private fun redirectToNextActivity() {
@@ -46,7 +46,7 @@ class DateOfBirthFragment : Fragment() {
         val year = dpDateOfBirth.year
         val calendar = Calendar.getInstance()
         calendar[year, month] = day
-        user.dateOfBirth = calendar.timeInMillis / 1000
+        user.dateOfBirth = calendar.timeInMillis
         userViewModel.update(user)
         Navigation.findNavController(requireView()).navigate(R.id.action_dateOfBirthFragment_to_summaryFragment)
     }

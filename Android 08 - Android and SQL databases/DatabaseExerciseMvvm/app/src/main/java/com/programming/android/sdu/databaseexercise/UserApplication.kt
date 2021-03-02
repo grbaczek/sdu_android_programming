@@ -4,7 +4,7 @@ import android.app.Application
 import com.programming.android.sdu.databaseexercise.database.AppDatabase
 import com.programming.android.sdu.databaseexercise.repositories.UserRepository
 
-class UserApplication: Application() {
+class UserApplication : Application() {
 
     // Using by lazy so the database and the repository are only created when they're needed
     // rather than when the application starts

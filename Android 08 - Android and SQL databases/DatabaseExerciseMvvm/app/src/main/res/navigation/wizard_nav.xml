@@ -9,7 +9,7 @@
         android:id="@+id/nameFragment"
         android:name="com.programming.android.sdu.databaseexercise.views.NameFragment"
         android:label="fragment_name"
-        tools:layout="@layout/fragment_name" >
+        tools:layout="@layout/fragment_name">
         <action
             android:id="@+id/action_nameFragment_to_addressFragment"
             app:destination="@id/addressFragment" />
@@ -18,7 +18,7 @@
         android:id="@+id/addressFragment"
         android:name="com.programming.android.sdu.databaseexercise.views.AddressFragment"
         android:label="fragment_address"
-        tools:layout="@layout/fragment_address" >
+        tools:layout="@layout/fragment_address">
         <action
             android:id="@+id/action_addressFragment_to_dateOfBirthFragment"
             app:destination="@id/dateOfBirthFragment" />
@@ -27,7 +27,7 @@
         android:id="@+id/dateOfBirthFragment"
         android:name="com.programming.android.sdu.databaseexercise.views.DateOfBirthFragment"
         android:label="fragment_date_of_birth"
-        tools:layout="@layout/fragment_date_of_birth" >
+        tools:layout="@layout/fragment_date_of_birth">
         <action
             android:id="@+id/action_dateOfBirthFragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />

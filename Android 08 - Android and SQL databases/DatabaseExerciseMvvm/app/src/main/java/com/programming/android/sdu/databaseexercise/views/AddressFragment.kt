@@ -27,13 +27,10 @@ class AddressFragment : Fragment() {
         user = userViewModel.currentUser!!
 
         binding = FragmentAddressBinding.inflate(inflater, container, false)
+        binding.user = userViewModel
         etYourAddress = binding.etYourAddress
-        binding.btnNext.setOnClickListener{ redirectToNextActivity() }
-
-        if (!TextUtils.isEmpty(user.address)) {
-            etYourAddress.setText(user.address)
-        }
-        return  binding.root
+        binding.btnNext.setOnClickListener { redirectToNextActivity() }
+        return binding.root
     }
 
     private fun redirectToNextActivity() {
