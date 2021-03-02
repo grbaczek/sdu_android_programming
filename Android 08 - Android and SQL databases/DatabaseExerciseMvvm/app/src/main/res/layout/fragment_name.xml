@@ -27,7 +27,6 @@
             android:id="@+id/etYourName"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@{user.name}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

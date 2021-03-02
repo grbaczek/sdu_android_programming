@@ -13,13 +13,11 @@ import com.programming.android.sdu.databaseexercise.viewmodels.UserViewModel
 class SummaryFragment : Fragment() {
 
     private lateinit var binding: FragmentSummaryBinding
-    private lateinit var user: User
     private val userViewModel: UserViewModel by activityViewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         userViewModel.init()
-        user = userViewModel.currentUser!!
         binding = FragmentSummaryBinding.inflate(inflater, container, false)
         binding.user = userViewModel
         return  binding.root
