@@ -4,22 +4,28 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
 class NameActivity : BaseActivity() {
-    private var etYourName: EditText? = null
+
+    private lateinit var etYourName: EditText
+    private lateinit var btnNext: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_name)
+
+        etYourName = findViewById(R.id.etYourName)
+        btnNext = findViewById(R.id.btnNext)
+        btnNext.setOnClickListener { redirectToNextActivity() }
+
+        if (!TextUtils.isEmpty(currentUser.name)) {
+            etYourName.setText(currentUser.name)
+        }
+
         Log.i(Constants.TAG, "NameActivity onCreate")
         Log.i(Constants.TAG_THREADING, "NameActivity onCreate- Current Thread ID- " + Thread.currentThread().id + " For Thread- " + Thread.currentThread().name)
-        etYourName = findViewById<View>(R.id.etYourName) as EditText
-        (findViewById<View>(R.id.btnNext) as Button).setOnClickListener { redirectToNextActivity() }
-        if (!TextUtils.isEmpty(currentUser!!.name)) {
-            etYourName!!.setText(currentUser!!.name)
-        }
     }
 
     override fun onStart() {
@@ -48,16 +54,13 @@ class NameActivity : BaseActivity() {
     }
 
     private fun redirectToNextActivity() {
-        if (!TextUtils.isEmpty(etYourName!!.text)) {
+        if (!TextUtils.isEmpty(etYourName.text)) {
             val intent = Intent(this, AddressActivity::class.java)
-            intent.putExtra(Constants.NAME_KEY, etYourName!!.text.toString())
-            currentUser!!.name = etYourName!!.text.toString()
-            db!!.userDao().update(currentUser)
+            intent.putExtra(Constants.NAME_KEY, etYourName.text.toString())
+            currentUser.name = etYourName.text.toString()
+            db.userDao().update(currentUser)
             startActivity(intent)
         }
     }
 
-    private fun finishActivity() {
-        finish()
-    }
 }

@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.programming.android.sdu.databaseexercise"
+        applicationId "com.programming.android.sdu.databaseexercisemvvm"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1

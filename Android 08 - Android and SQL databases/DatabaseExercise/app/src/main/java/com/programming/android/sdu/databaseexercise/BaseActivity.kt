@@ -9,24 +9,23 @@ import com.programming.android.sdu.databaseexercise.database.User
  * Created by grzegorzbaczek on 10/03/2018.
  */
 open class BaseActivity : AppCompatActivity() {
-    protected var db: AppDatabase? = null
-    protected var currentUser: User? = null
+
+    protected lateinit var db: AppDatabase
+    protected lateinit var currentUser: User
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        db = AppDatabase.getAppDatabase(this)
-        if (db!!.userDao().countUsers() == 0) {
+        db = AppDatabase.getAppDatabase(this)!!
+        if (db.userDao().countUsers() == 0) {
             currentUser = User()
-            currentUser!!.uid = 1
-            currentUser!!.address = ""
-            currentUser!!.dateOfBirth = 0
-            currentUser!!.name = ""
-            db!!.userDao().insert(currentUser)
+            currentUser.uid = 1
+            currentUser.address = ""
+            currentUser.dateOfBirth = 0
+            currentUser.name = ""
+            db.userDao().insert(currentUser)
         } else {
-            currentUser = db!!.userDao().user
+            currentUser = db.userDao().user!!
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
 }

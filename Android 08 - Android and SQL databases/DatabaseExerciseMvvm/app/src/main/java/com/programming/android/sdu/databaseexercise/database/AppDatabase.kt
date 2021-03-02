@@ -18,7 +18,8 @@ abstract class AppDatabase : RoomDatabase() {
 
         fun getAppDatabase(context: Context): AppDatabase? {
             if (INSTANCE == null) {
-                INSTANCE = Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, "user-database") // allow queries on the main thread.
+                INSTANCE = Room.databaseBuilder(context.applicationContext, AppDatabase::class.java, "user-database")
+                        // Allow queries on the main thread.
                         // Don't do this on a real app!
                         .allowMainThreadQueries()
                         .build()
