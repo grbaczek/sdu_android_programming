@@ -44,17 +44,8 @@ class DateOfBirthActivity : BaseActivity() {
         Log.i(Constants.TAG, "DateOfBirthActivity onCreate")
         Log.i(Constants.TAG_THREADING, "DateOfBirthActivity onCreate- Current Thread ID- " + Thread.currentThread().id + " For Thread- " + Thread.currentThread().name)
 
-        //DONT DO IT LIKE THIS!!!!!!!
-        Thread {
-            try {
-                Thread.sleep(6000)
-            } catch (e: InterruptedException) {
-                e.printStackTrace()
-            }
-            Log.i(Constants.TAG_THREADING, "DateOfBirthActivity setting the new date")
-            dpDateOfBirth.updateDate(1990, 0, 1)
-        }.start()
-        // throw new RuntimeException();
+        Log.i(Constants.TAG_THREADING, "DateOfBirthActivity setting the new date")
+        dpDateOfBirth.updateDate(1990, 0, 1)
     }
 
     override fun onStart() {
