@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.DatePicker
+import com.programming.android.sdu.databaseexercise.database.User
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -39,13 +40,15 @@ class DateOfBirthActivity : BaseActivity() {
             val calendar = Calendar.getInstance()
             calendar.timeInMillis = currentUser.dateOfBirth
             dpDateOfBirth.updateDate(calendar[Calendar.YEAR], calendar[Calendar.MONTH], calendar[Calendar.DAY_OF_MONTH])
+        }else{
+            dpDateOfBirth.updateDate(1990, 0, 1)
         }
 
         Log.i(Constants.TAG, "DateOfBirthActivity onCreate")
         Log.i(Constants.TAG_THREADING, "DateOfBirthActivity onCreate- Current Thread ID- " + Thread.currentThread().id + " For Thread- " + Thread.currentThread().name)
 
         Log.i(Constants.TAG_THREADING, "DateOfBirthActivity setting the new date")
-        dpDateOfBirth.updateDate(1990, 0, 1)
+
     }
 
     override fun onStart() {
@@ -85,8 +88,14 @@ class DateOfBirthActivity : BaseActivity() {
         val sdf = SimpleDateFormat("dd-MM-yyyy")
         val formattedDate = sdf.format(calendar.time)
         intent.putExtra(Constants.DATE_OF_BIRTH_KEY, formattedDate)
-        currentUser.dateOfBirth = calendar.timeInMillis
-        db.userDao().update(currentUser)
+
+        val updatedUser = User(
+                uid = currentUser.uid,
+                address =  currentUser.address,
+                dateOfBirth = calendar.timeInMillis,
+                name = currentUser.name
+        )
+        db.userDao().update(updatedUser)
         startActivity(intent)
     }
 

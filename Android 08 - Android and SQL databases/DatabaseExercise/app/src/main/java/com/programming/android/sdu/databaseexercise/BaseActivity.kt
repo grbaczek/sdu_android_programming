@@ -17,11 +17,11 @@ open class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         db = AppDatabase.getAppDatabase(this)!!
         if (db.userDao().countUsers() == 0) {
-            currentUser = User()
-            currentUser.uid = 1
-            currentUser.address = ""
-            currentUser.dateOfBirth = 0
-            currentUser.name = ""
+            currentUser = User(
+                    uid = 1,
+                    address = "",
+                    dateOfBirth = 0,
+                    name = "")
             db.userDao().insert(currentUser)
         } else {
             currentUser = db.userDao().user!!
