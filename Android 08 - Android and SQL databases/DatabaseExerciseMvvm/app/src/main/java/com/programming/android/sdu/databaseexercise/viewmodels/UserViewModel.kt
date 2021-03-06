@@ -31,7 +31,7 @@ class UserViewModel() : ViewModel() {
         dateOfBirth.set(formattedDate)
     }
 
-    fun insert(user: User) {
+    private fun insert(user: User) {
         repository.insert(user)
     }
 
@@ -39,11 +39,11 @@ class UserViewModel() : ViewModel() {
         repository.update(user)
     }
 
-    fun count(): Int {
+    private fun count(): Int {
         return repository.count()
     }
 
-    fun createNewUser(): User {
+    private fun createNewUser(): User {
         val newUser = User()
         newUser.uid = 1
         newUser.address = ""

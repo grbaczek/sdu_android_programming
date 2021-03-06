@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import com.programming.android.sdu.databaseexercise.database.User
 
 class NameActivity : BaseActivity() {
 
@@ -57,8 +58,14 @@ class NameActivity : BaseActivity() {
         if (!TextUtils.isEmpty(etYourName.text)) {
             val intent = Intent(this, AddressActivity::class.java)
             intent.putExtra(Constants.NAME_KEY, etYourName.text.toString())
-            currentUser.name = etYourName.text.toString()
-            db.userDao().update(currentUser)
+
+            val updatedUser = User(
+                    uid = currentUser.uid,
+                    address =  currentUser.address,
+                    dateOfBirth = currentUser.dateOfBirth,
+                    name = etYourName.text.toString()
+            )
+            db.userDao().update(updatedUser)
             startActivity(intent)
         }
     }
