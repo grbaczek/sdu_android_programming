@@ -12,6 +12,8 @@ class RandomViewModel : ViewModel() {
 
     // A coroutine job
     private lateinit var job: Job
+    @Volatile
+    private var running = true
     private val randomManager = RandomManager()
     private val _randomString = MutableLiveData<String>()
     val randomString: LiveData<String>
@@ -24,7 +26,7 @@ class RandomViewModel : ViewModel() {
     private fun updateRandom() {
         // Launch coroutine in viewModelScope
        job = viewModelScope.launch {
-           while (true) {
+           while (running) {
                // Create and post a random string
                val newRandomString = randomManager.random()
                _randomString.postValue(newRandomString)
@@ -35,6 +37,7 @@ class RandomViewModel : ViewModel() {
     }
 
     override fun onCleared() {
+        running = false
         super.onCleared()
         // Cancel the coroutine job when the view model is no longer used
         job.cancel()
