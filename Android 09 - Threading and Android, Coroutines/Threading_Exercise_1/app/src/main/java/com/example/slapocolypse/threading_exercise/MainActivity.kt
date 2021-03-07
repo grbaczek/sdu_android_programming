@@ -8,10 +8,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var textSwitcher: TextSwitcher
-
-    //Thread Stuff
     private lateinit var workerThread: Thread
-
     //Semaphore for keeping track of thread
     @Volatile
     var running = true
@@ -21,19 +18,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         textSwitcher = findViewById(R.id.joke_holder)
-        //Declares standard animations for textSwitcher
+        // Declares standard animations for textSwitcher
         textSwitcher.setInAnimation(this, android.R.anim.slide_in_left)
         textSwitcher.setOutAnimation(this, android.R.anim.slide_out_right)
 
-        //Create a thread
+        // Create a thread
         workerThread = Thread {
-            //Make sure the thread is still supposed to run.
+            // Make sure the thread is still supposed to run.
             while (running) {
                 val randomString = random()
-                //new runnable for changing text in textSwitcher
+                // New runnable for changing text in textSwitcher
                 textSwitcher.post { textSwitcher.setText(randomString) }
 
-                //Have thread sleep for 5 seconds (5000 ms)
+                // Make the thread sleep for 5 seconds (5.000 ms)
                 try {
                     Thread.sleep(5000)
                 } catch (e: InterruptedException) {
@@ -42,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //start the thread
+        // Start the thread
         workerThread.start()
     }
 

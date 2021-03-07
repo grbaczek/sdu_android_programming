@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         textSwitcher = findViewById(R.id.joke_holder)
-        //Declares standard animations for textSwitcher
+        // Declares standard animations for textSwitcher
         textSwitcher.setInAnimation(this, android.R.anim.slide_in_left)
         textSwitcher.setOutAnimation(this, android.R.anim.slide_out_right)
 

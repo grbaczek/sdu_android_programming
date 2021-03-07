@@ -10,51 +10,48 @@ import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
 
-    //Example of using Butterknife in your application
     private val url = "https://api.icndb.com/"
     private lateinit var textSwitcher: TextSwitcher
-
-    //Thread Stuff
     private var workerThread: Thread? = null
-
-    //Semaphore for keeping track of thread
+    // Semaphore for keeping track of thread
     @Volatile
     var running = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         textSwitcher = findViewById(R.id.joke_holder)
 
-        //Declares standard animations for textSwitcher
+        // Declares standard animations for textSwitcher
         textSwitcher.setInAnimation(this, android.R.anim.slide_in_left)
         textSwitcher.setOutAnimation(this, android.R.anim.slide_out_right)
 
-        //Instantiates Retrofrit
+        // Instantiates Retrofit
         val retrofit = Retrofit.Builder().baseUrl(url)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
-        //create retrofit instance of JokeService
+        // Create retrofit instance of JokeService
         val jokeService = retrofit.create(JokeService::class.java)
 
-        //Create a thread
+        // Create a thread
         workerThread = Thread {
-            //Make sure the thread is still supposed to run.
+            // Make sure the thread is still supposed to run.
             while (running) {
-                //Use jokeservice to get a joke
+                // Use jokeService to get a joke
                 val joke = jokeService.randomJoke()
                 try {
-                    //Convert joke to string, formatting it, avoiding html escape characters
-                    val current_joke = joke!!.execute().body()
-                    val joke_txt = Html.fromHtml(current_joke!!.value!!.joke).toString()
+                    // Convert joke to string, formatting it, avoiding html escape characters
+                    val currentJoke = joke!!.execute().body()
+                    val jokeString = Html.fromHtml(currentJoke!!.value!!.joke).toString()
 
-                    //new runnable for changing text in textswitcher
-                    textSwitcher.post(Runnable { textSwitcher.setText(joke_txt) })
+                    // New runnable for changing text in textswitcher
+                    textSwitcher.post(Runnable { textSwitcher.setText(jokeString) })
                 } catch (e: IOException) {
                     e.printStackTrace()
                 }
-                //Have thread sleep for 5 seconds (5.000 ms)
+                // Make the thread sleep for 5 seconds (5.000 ms)
                 try {
                     Thread.sleep(5000)
                 } catch (e: InterruptedException) {
@@ -63,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //start the thread
+        // Start the thread
         workerThread!!.start()
     }
 

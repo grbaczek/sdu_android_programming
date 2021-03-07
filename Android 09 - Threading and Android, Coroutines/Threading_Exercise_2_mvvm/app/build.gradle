@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.slapocolypse.threading_exercise"
+        applicationId "com.example.slapocolypse.threading_exercise_mvvm"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1

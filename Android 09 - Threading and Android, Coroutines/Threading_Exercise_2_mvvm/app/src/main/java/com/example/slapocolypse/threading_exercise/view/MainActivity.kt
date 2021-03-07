@@ -10,7 +10,6 @@ import com.example.slapocolypse.threading_exercise.viewmodel.JokeViewModel
 class MainActivity : AppCompatActivity() {
 
     private val jokeViewModel: JokeViewModel by viewModels()
-    //Example of using Butterknife in your application
     private lateinit var textSwitcher: TextSwitcher
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         textSwitcher.setInAnimation(this, android.R.anim.slide_in_left)
         textSwitcher.setOutAnimation(this, android.R.anim.slide_out_right)
 
-        jokeViewModel.joke.observe(this, { joke ->
-            textSwitcher.post { textSwitcher.setText(joke) }
+        jokeViewModel.joke.observe(this, { jokeString ->
+            textSwitcher.post { textSwitcher.setText(jokeString) }
         })
     }
 
