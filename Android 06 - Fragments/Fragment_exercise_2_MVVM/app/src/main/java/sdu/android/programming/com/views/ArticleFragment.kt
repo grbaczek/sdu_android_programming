@@ -26,7 +26,7 @@ class ArticleFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        articleViewModel.getSelectedArticle().observe(viewLifecycleOwner,{
+        articleViewModel.getSelectedArticle().observe(viewLifecycleOwner, {
             tvArticle.text = it.second.body
             mCurrentPosition = it.first
         })

@@ -68,7 +68,7 @@ class AddressActivity : BaseActivity() {
             intent.putExtra(Constants.NAME_KEY, name)
             val updatedUser = User(
                     uid = currentUser.uid,
-                    address =  etYourAddress.text.toString(),
+                    address = etYourAddress.text.toString(),
                     dateOfBirth = currentUser.dateOfBirth,
                     name = currentUser.name
             )

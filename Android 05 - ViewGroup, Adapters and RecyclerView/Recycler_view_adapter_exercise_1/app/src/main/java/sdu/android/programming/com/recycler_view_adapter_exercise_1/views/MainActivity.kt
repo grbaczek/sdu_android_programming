@@ -1,7 +1,6 @@
 package sdu.android.programming.com.recycler_view_adapter_exercise_1.views
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -13,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: CustomAdapter
-    private var layoutManager: RecyclerView.LayoutManager? = null
+    private lateinit  var layoutManager: RecyclerView.LayoutManager
     private val numberViewModel: NumberViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         adapter.setNumbers(numberViewModel.getNumbers().value!!)
         recyclerView.adapter = adapter
 
-        numberViewModel.getNumbers().observe(this, {  numbers ->
+        numberViewModel.getNumbers().observe(this, { numbers ->
             adapter.setNumbers(numbers)
         })
 

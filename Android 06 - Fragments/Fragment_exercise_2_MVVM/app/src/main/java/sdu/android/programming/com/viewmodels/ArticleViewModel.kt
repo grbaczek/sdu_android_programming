@@ -5,14 +5,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import sdu.android.programming.com.models.Article
 import sdu.android.programming.com.models.ArticleManager
-import java.text.FieldPosition
 
 
 class ArticleViewModel : ViewModel() {
 
     private lateinit var articles: ArrayList<Article>
     private lateinit var articleHeadLines: Array<String?>
-    private var selectedArticle= MutableLiveData<Pair<Int, Article>>()
+    private var selectedArticle = MutableLiveData<Pair<Int, Article>>()
     private val articleManager = ArticleManager()
 
     init {
@@ -20,16 +19,12 @@ class ArticleViewModel : ViewModel() {
         loadArticleHeadlines()
     }
 
-    fun getSelectedArticle(): LiveData<Pair<Int, Article>>{
+    fun getSelectedArticle(): LiveData<Pair<Int, Article>> {
         return selectedArticle
     }
 
-    fun selectArticleAt(position: Int){
+    fun selectArticleAt(position: Int) {
         selectedArticle.value = Pair(position, articles[position])
-    }
-
-    fun getArticles(): List<Article> {
-        return articles
     }
 
     fun getHeadlines(): Array<String?> {

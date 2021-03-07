@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
 
         // Check whether the activity is using the layout version with
         // the fragment_container FrameLayout. If so, we must add the first fragment
-        if (findViewById<View?>(R.id.fragment_container) != null) {
+        if (findViewById<View>(R.id.fragment_container) != null) {
 
             // However, if we're being restored from a previous state,
             // then we don't need to do anything and should return or else
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
 
             // Add the fragment to the 'fragment_container' FrameLayout
             supportFragmentManager.beginTransaction()
-                    .add(R.id.fragment_container, firstFragment).commit()
+                .add(R.id.fragment_container, firstFragment).commit()
         }
     }
 
@@ -40,7 +40,8 @@ class MainActivity : AppCompatActivity(), OnHeadlineSelectedListener {
         // The user selected the headline of an article from the HeadlinesFragment
 
         // Capture the article fragment from the activity layout
-        val articleFrag = supportFragmentManager.findFragmentById(R.id.article_fragment) as ArticleFragment?
+        val articleFrag =
+            supportFragmentManager.findFragmentById(R.id.article_fragment) as ArticleFragment?
         if (articleFrag != null) {
             // If article frag is available, we're in two-pane layout...
 

@@ -9,9 +9,11 @@ import android.widget.ImageView
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+
     private val images = ArrayList<Bitmap>()
-    private var mImageView: ImageView? = null
+    private lateinit var mImageView: ImageView
     private var index = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setImage() {
-        mImageView!!.setImageBitmap(images[index])
+        mImageView.setImageBitmap(images[index])
     }
 
     fun nextClick(view: View?) {

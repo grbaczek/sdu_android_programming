@@ -40,7 +40,7 @@ class DateOfBirthActivity : BaseActivity() {
             val calendar = Calendar.getInstance()
             calendar.timeInMillis = currentUser.dateOfBirth
             dpDateOfBirth.updateDate(calendar[Calendar.YEAR], calendar[Calendar.MONTH], calendar[Calendar.DAY_OF_MONTH])
-        }else{
+        } else {
             dpDateOfBirth.updateDate(1990, 0, 1)
         }
 
@@ -91,7 +91,7 @@ class DateOfBirthActivity : BaseActivity() {
 
         val updatedUser = User(
                 uid = currentUser.uid,
-                address =  currentUser.address,
+                address = currentUser.address,
                 dateOfBirth = calendar.timeInMillis,
                 name = currentUser.name
         )

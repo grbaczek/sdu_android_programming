@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import sdu.android.programming.com.R
 import sdu.android.programming.com.viewmodels.ArticleViewModel
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
 
     private val articleViewModel: ArticleViewModel by viewModels()
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(){
 
         // Check whether the activity is using the layout version with
         // the fragment_container FrameLayout. If so, we must add the first fragment
-        if (findViewById<View?>(R.id.fragment_container) != null) {
+        if (findViewById<View>(R.id.fragment_container) != null) {
 
             // However, if we're being restored from a previous state,
             // then we don't need to do anything and should return or else
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(){
 
             // Add the fragment to the 'fragment_container' FrameLayout
             supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container, firstFragment).commit()
+                    .add(R.id.fragment_container, firstFragment).commit()
         }
 
         articleViewModel.getSelectedArticle().observe(this, {

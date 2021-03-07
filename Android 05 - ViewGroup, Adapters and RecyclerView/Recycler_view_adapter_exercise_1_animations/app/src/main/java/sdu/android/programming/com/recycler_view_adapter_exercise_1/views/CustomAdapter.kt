@@ -13,14 +13,9 @@ import sdu.android.programming.com.recycler_view_adapter_exercise_1.models.Numbe
 /**
  * Created by Jakob on 27/02/2018.
  */
-class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder> {
+class CustomAdapter(private val listener: ViewHolderListener) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     private lateinit var numbers: ArrayList<NumberModel>
-    private val listener: ViewHolderListener
-
-    constructor(listener: ViewHolderListener) : super() {
-        this.listener = listener
-    }
 
     /**
      * Sets the numbers for the adapter and notify that data has changed
@@ -41,7 +36,7 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder> {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.random_textview, parent, false)
         val tv = v.findViewById<TextView>(R.id.test_tv)
         val vh = ViewHolder(v, tv)
-        vh.textView.setOnClickListener { v -> deleteItem(vh.adapterPosition, v) }
+        vh.textView.setOnClickListener { view -> deleteItem(vh.adapterPosition, view) }
         return vh
     }
 
@@ -71,7 +66,7 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.ViewHolder> {
      * @param v View used for snackbar to find go back hierarychally and find coordinator layout
      */
     fun deleteItem(position: Int, v: View?) {
-        val message = String.format("Removing item at position: %s with value: %s", position,  numbers[position].value)
+        val message = String.format("Removing item at position: %s with value: %s", position, numbers[position].value)
         Log.i("CustomAdapter", message)
 
         val number = numbers[position].value

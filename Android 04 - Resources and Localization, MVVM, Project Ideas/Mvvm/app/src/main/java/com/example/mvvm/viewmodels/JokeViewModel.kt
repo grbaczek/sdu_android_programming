@@ -9,13 +9,12 @@ import com.example.mvvm.repository.JokeRepository
 class JokeViewModel : ViewModel() {
 
     private val jokeRepository: JokeRepository = JokeRepository()
-    private val joke = MutableLiveData<Joke>()
+    private val _joke = MutableLiveData<Joke>()
 
-    fun getJoke(): LiveData<Joke>{
-        return joke
-    }
+    val joke: LiveData<Joke>
+        get() = _joke
 
     fun randomJoke() {
-        joke.value = jokeRepository.fetchRandomJoke()
+        _joke.value = jokeRepository.fetchRandomJoke()
     }
 }

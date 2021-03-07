@@ -14,7 +14,7 @@ import android.view.View
 /**
  * Created by grzegorzbaczek on 23/02/2018.
  */
-class CustomSwipeView : View, GestureDetector.OnGestureListener {
+class CustomSwipeView @SuppressLint("ClickableViewAccessibility") constructor(context: Context?, attrs: AttributeSet?) : View(context, attrs), GestureDetector.OnGestureListener {
 
     private val colors: IntArray = intArrayOf(
             Color.BLACK,
@@ -29,14 +29,12 @@ class CustomSwipeView : View, GestureDetector.OnGestureListener {
             Color.CYAN,
             Color.MAGENTA
     )
+
     private var currentColorIndex = 0
     private var gestureDetector: GestureDetector? = null
-    private lateinit var paint: Paint
+    private var paint: Paint
 
-    constructor(context: Context?) : super(context)
-
-    @SuppressLint("ClickableViewAccessibility")
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs) {
+    init {
         setOnTouchListener { _, event ->
             gestureDetector?.onTouchEvent(event)
             Log.i("CustomSwipeView", "onTouchListener")
@@ -45,8 +43,6 @@ class CustomSwipeView : View, GestureDetector.OnGestureListener {
         gestureDetector = GestureDetector(getContext(), this)
         paint = Paint()
     }
-
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {}
 
     override fun onDown(e: MotionEvent?): Boolean {
         return false

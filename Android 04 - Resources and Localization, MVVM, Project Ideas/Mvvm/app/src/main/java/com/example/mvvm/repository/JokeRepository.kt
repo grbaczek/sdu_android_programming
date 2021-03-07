@@ -1,7 +1,6 @@
 package com.example.mvvm.repository
 
 import com.example.mvvm.models.Joke
-import kotlin.collections.ArrayList
 
 /**
  * This class simulates calls to an API to get random jokes

@@ -16,7 +16,6 @@
 package sdu.android.programming.com
 
 import android.content.Context
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -30,7 +29,7 @@ class HeadlinesFragment : ListFragment() {
     // The container Activity must implement this interface so the frag can deliver messages
     interface OnHeadlineSelectedListener {
         /** Called by HeadlinesFragment when a list item is selected  */
-        open fun onArticleSelected(position: Int)
+        fun onArticleSelected(position: Int)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,8 +60,10 @@ class HeadlinesFragment : ListFragment() {
         mCallback = try {
             activity as OnHeadlineSelectedListener?
         } catch (e: ClassCastException) {
-            throw ClassCastException(context.toString()
-                    + " must implement OnHeadlineSelectedListener")
+            throw ClassCastException(
+                context.toString()
+                        + " must implement OnHeadlineSelectedListener"
+            )
         }
     }
 

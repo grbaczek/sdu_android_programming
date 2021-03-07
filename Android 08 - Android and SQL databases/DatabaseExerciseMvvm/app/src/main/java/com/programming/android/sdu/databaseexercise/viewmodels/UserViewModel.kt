@@ -6,7 +6,7 @@ import com.programming.android.sdu.databaseexercise.database.User
 import com.programming.android.sdu.databaseexercise.repositories.UserRepository
 import java.text.SimpleDateFormat
 
-class UserViewModel() : ViewModel() {
+class UserViewModel : ViewModel() {
 
     lateinit var repository: UserRepository
     var currentUser: User? = null

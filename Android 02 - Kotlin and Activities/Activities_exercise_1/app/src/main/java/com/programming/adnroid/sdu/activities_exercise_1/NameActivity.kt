@@ -2,26 +2,23 @@ package com.programming.adnroid.sdu.activities_exercise_1
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.text.TextUtils
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class NameActivity : AppCompatActivity() {
 
-
-    private var etYourName: EditText? = null
-    private lateinit var etYourNameLateinit: EditText
+    private lateinit var etYourName: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_name)
-
-        etYourName = findViewById<View>(R.id.etYourName) as EditText
-        etYourNameLateinit = findViewById<View>(R.id.etYourName) as EditText
-
+        etYourName = findViewById(R.id.etYourName)
+        val btnNext: Button = findViewById(R.id.btnNext)
+        btnNext.setOnClickListener { redirectToNextActivity() }
+        Log.i(Constants.TAG, "NameActivity onCreate ")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -56,21 +53,16 @@ class NameActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        this.apply {  }
+        this.apply { }
         Log.i(Constants.TAG, "NameActivity onDestroy")
     }
 
-
-
     private fun redirectToNextActivity() {
-        if (!TextUtils.isEmpty(etYourName!!.text)) {
+        if (!TextUtils.isEmpty(etYourName.text)) {
             val intent = Intent(this, AddressActivity::class.java)
-            intent.putExtra(Constants.NAME_KEY, etYourName!!.text.toString())
+            intent.putExtra(Constants.NAME_KEY, etYourName.text.toString())
             startActivity(intent)
         }
     }
 
-    private fun finishActivity() {
-        finish()
-    }
 }

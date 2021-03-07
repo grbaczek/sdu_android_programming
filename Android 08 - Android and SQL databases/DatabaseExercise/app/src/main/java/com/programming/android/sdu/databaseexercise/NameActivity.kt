@@ -61,7 +61,7 @@ class NameActivity : BaseActivity() {
 
             val updatedUser = User(
                     uid = currentUser.uid,
-                    address =  currentUser.address,
+                    address = currentUser.address,
                     dateOfBirth = currentUser.dateOfBirth,
                     name = etYourName.text.toString()
             )

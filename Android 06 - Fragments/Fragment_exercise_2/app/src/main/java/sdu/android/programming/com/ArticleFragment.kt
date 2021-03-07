@@ -27,8 +27,10 @@ class ArticleFragment : Fragment() {
     private var mCurrentPosition = -1
     private lateinit var tvArticle: TextView
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
         // If activity recreated (such as from screen rotate), restore
         // the previous article selection set by onSaveInstanceState().

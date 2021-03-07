@@ -1,4 +1,5 @@
 package sdu.android.programming.com.recycler_view_adapter_exercise_1.viewmodels
+
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

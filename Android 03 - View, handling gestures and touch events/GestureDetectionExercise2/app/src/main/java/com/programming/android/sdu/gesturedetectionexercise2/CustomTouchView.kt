@@ -16,7 +16,7 @@ import androidx.core.view.GestureDetectorCompat
 /**
  * Created by grzegorzbaczek on 23/02/2018.
  */
-class CustomTouchView : View, GestureDetector.OnGestureListener {
+class CustomTouchView(context: Context?, @Nullable attrs: AttributeSet?) : View(context, attrs), GestureDetector.OnGestureListener {
 
     var circle_paint: Paint = Paint()
     private var mDetector: GestureDetectorCompat? = null
@@ -25,8 +25,7 @@ class CustomTouchView : View, GestureDetector.OnGestureListener {
     private val bottom_left_color = Color.BLUE
     private val bottom_right_color = Color.YELLOW
 
-    constructor(context: Context?) : super(context)
-    constructor(context: Context?, @Nullable attrs: AttributeSet?) : super(context, attrs) {
+    init {
         circle_paint.style = Paint.Style.FILL
         circle_paint.color = Color.WHITE
         mDetector = GestureDetectorCompat(getContext(), this)
