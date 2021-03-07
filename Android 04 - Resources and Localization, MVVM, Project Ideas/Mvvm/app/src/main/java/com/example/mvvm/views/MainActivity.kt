@@ -6,12 +6,12 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.viewModels
 import com.example.mvvm.R
-import com.example.mvvm.viewmodels.UserViewModel
+import com.example.mvvm.viewmodels.JokeViewModel
 
 class MainActivity : AppCompatActivity() {
 
     // Create the view model which provides data for the view
-    private val userViewModel: UserViewModel by viewModels()
+    private val jokeViewModel: JokeViewModel by viewModels()
     private lateinit var textView: TextView
     private lateinit var button: Button
 
@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
         textView = findViewById(R.id.textView)
         button = findViewById(R.id.button)
         button.setOnClickListener {
-            userViewModel.randomJoke()
+            jokeViewModel.randomJoke()
         }
 
         // Observe the LiveData and update the view on change
-        userViewModel.getJoke().observe(this, {  joke ->
+        jokeViewModel.getJoke().observe(this, { joke ->
             textView.text = joke.text
         })
     }

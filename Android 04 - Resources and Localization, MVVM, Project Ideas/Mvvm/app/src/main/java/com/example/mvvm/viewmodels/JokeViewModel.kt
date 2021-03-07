@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.example.mvvm.models.Joke
 import com.example.mvvm.repository.JokeRepository
 
-class UserViewModel : ViewModel() {
+class JokeViewModel : ViewModel() {
 
     private val jokeRepository: JokeRepository = JokeRepository()
     private val joke = MutableLiveData<Joke>()
