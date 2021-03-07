@@ -4,6 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.slapocolypse.threading_exercise.model.RandomManager
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -25,7 +26,7 @@ class RandomViewModel : ViewModel() {
 
     private fun updateRandom() {
         // Launch coroutine in viewModelScope
-       job = viewModelScope.launch {
+       job = viewModelScope.launch(Dispatchers.IO) {
            while (running) {
                // Create and post a random string
                val newRandomString = randomManager.random()

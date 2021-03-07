@@ -6,6 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.slapocolypse.threading_exercise.repository.ServiceBuilder
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -27,7 +28,7 @@ class JokeViewModel : ViewModel() {
 
     fun updateJoke() {
         // Launch coroutine in viewModelScope
-        job = viewModelScope.launch{
+        job = viewModelScope.launch(Dispatchers.IO){
             while(running) {
                 // Fetch a joke
                 val joke = jokeService.randomJoke()
