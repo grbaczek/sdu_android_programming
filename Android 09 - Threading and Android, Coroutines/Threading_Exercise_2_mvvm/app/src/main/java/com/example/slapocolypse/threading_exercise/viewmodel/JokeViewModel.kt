@@ -28,7 +28,7 @@ class JokeViewModel : ViewModel() {
 
     fun updateJoke() {
         // Launch coroutine in viewModelScope
-        job = viewModelScope.launch(Dispatchers.IO){
+        viewModelScope.launch(Dispatchers.IO){
             while(running) {
                 // Fetch a joke
                 val joke = jokeService.randomJoke()
@@ -36,7 +36,7 @@ class JokeViewModel : ViewModel() {
                 // Post the joke to live data
                 _joke.postValue(jokeText)
                 // Suspend the coroutine for 5 seconds
-                delay(5000)
+                delay(10)
             }
         }
     }
@@ -45,7 +45,7 @@ class JokeViewModel : ViewModel() {
         running = false
         super.onCleared()
         // Cancel the coroutine job when the view model is no longer used
-        job.cancel()
+        //job.cancel()
     }
 
 }
