@@ -1,0 +1,165 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/4575ae1a47b79f157a18436521b08473/appcompat-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/118377ead7f5e968416789296ffd5653/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.core:core-ktx:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/bac30f373de56b2ead65f3e283d8705d/jetified-core-ktx-1.5.0-beta03/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/033e822909dee3fbe1d28cbae89b6b2b/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/415c879096e409e899fe81f2a229794f/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/349b2ff039e1d6b8de08b4e633393895/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/6c86e2f5967b3ff42e70f9d98a188c48/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/a7756f19ab92a246647e45eca2420ea8/vectordrawable-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/b615e8f29af90c066ddf0a72960d4f86/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/8155aea570f326b9b49bcaeff256789c/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9fbaedb926736679170acb2d0378af48/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/1a36a40a1234fe8b4be5e88566370cb4/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/fca872de73cb3142478dd73506feebf2/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/23a4de7aa7b0cd919df71d9f3660798b/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/32543dd1c0a9fae3445d34c4e42ec073/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d55442418e22c252413905c9fe80ceba/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/5fe94aea0002555bf3f98f31405cb677/core-1.5.0-beta03/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ac7cedb64b6d7e69edaddec1f528b590/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/805e2d1c2cca6046f7a860455f46e7e3/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/24d2fc96c56b85a9aa3268db2daacf42/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/09ce72a9ffe21e6519cd972765e37dac/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/07c960b3b45772e132b74db6c7a84a5f/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/56e30290417207175dbec3afd7b93f1b/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d06659c0d1ead2dbd685fb5f00fea0ac/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/81d89b3358fdafadeadf98a76487562b/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9b987660cd462cf75d816c1e628861a6/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9695373747d7a27c2fa938bc755dafaf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9d8dfa2e5310fcd347f2c885f11afcb9/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:3:5-66
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:1-25:12
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_CONTACTS
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:5:5-89
+	android:name
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:5:22-70
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:6:5-88
+	android:name
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:6:22-69
+application
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:9:5-23:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/118377ead7f5e968416789296ffd5653/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/118377ead7f5e968416789296ffd5653/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/5fe94aea0002555bf3f98f31405cb677/core-1.5.0-beta03/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/5fe94aea0002555bf3f98f31405cb677/core-1.5.0-beta03/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ac7cedb64b6d7e69edaddec1f528b590/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ac7cedb64b6d7e69edaddec1f528b590/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/5fe94aea0002555bf3f98f31405cb677/core-1.5.0-beta03/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:12:9-41
+	android:roundIcon
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:10:9-35
+	android:theme
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:15:9-40
+activity#com.programming.android.sdu.contentproviderexercise.MainActivity
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:16:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/4575ae1a47b79f157a18436521b08473/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/4575ae1a47b79f157a18436521b08473/appcompat-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/118377ead7f5e968416789296ffd5653/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/118377ead7f5e968416789296ffd5653/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/bac30f373de56b2ead65f3e283d8705d/jetified-core-ktx-1.5.0-beta03/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/bac30f373de56b2ead65f3e283d8705d/jetified-core-ktx-1.5.0-beta03/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/033e822909dee3fbe1d28cbae89b6b2b/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/033e822909dee3fbe1d28cbae89b6b2b/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/415c879096e409e899fe81f2a229794f/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/415c879096e409e899fe81f2a229794f/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/349b2ff039e1d6b8de08b4e633393895/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/349b2ff039e1d6b8de08b4e633393895/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/6c86e2f5967b3ff42e70f9d98a188c48/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/6c86e2f5967b3ff42e70f9d98a188c48/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/a7756f19ab92a246647e45eca2420ea8/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/a7756f19ab92a246647e45eca2420ea8/vectordrawable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/b615e8f29af90c066ddf0a72960d4f86/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/b615e8f29af90c066ddf0a72960d4f86/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/8155aea570f326b9b49bcaeff256789c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/8155aea570f326b9b49bcaeff256789c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9fbaedb926736679170acb2d0378af48/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9fbaedb926736679170acb2d0378af48/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/1a36a40a1234fe8b4be5e88566370cb4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/1a36a40a1234fe8b4be5e88566370cb4/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/fca872de73cb3142478dd73506feebf2/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/fca872de73cb3142478dd73506feebf2/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/23a4de7aa7b0cd919df71d9f3660798b/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/23a4de7aa7b0cd919df71d9f3660798b/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/32543dd1c0a9fae3445d34c4e42ec073/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/32543dd1c0a9fae3445d34c4e42ec073/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d55442418e22c252413905c9fe80ceba/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d55442418e22c252413905c9fe80ceba/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/5fe94aea0002555bf3f98f31405cb677/core-1.5.0-beta03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0-beta03] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/5fe94aea0002555bf3f98f31405cb677/core-1.5.0-beta03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ac7cedb64b6d7e69edaddec1f528b590/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/ac7cedb64b6d7e69edaddec1f528b590/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/805e2d1c2cca6046f7a860455f46e7e3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/805e2d1c2cca6046f7a860455f46e7e3/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/24d2fc96c56b85a9aa3268db2daacf42/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/24d2fc96c56b85a9aa3268db2daacf42/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/09ce72a9ffe21e6519cd972765e37dac/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/09ce72a9ffe21e6519cd972765e37dac/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/07c960b3b45772e132b74db6c7a84a5f/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/07c960b3b45772e132b74db6c7a84a5f/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/56e30290417207175dbec3afd7b93f1b/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/56e30290417207175dbec3afd7b93f1b/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d06659c0d1ead2dbd685fb5f00fea0ac/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/d06659c0d1ead2dbd685fb5f00fea0ac/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/81d89b3358fdafadeadf98a76487562b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/81d89b3358fdafadeadf98a76487562b/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9b987660cd462cf75d816c1e628861a6/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9b987660cd462cf75d816c1e628861a6/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9695373747d7a27c2fa938bc755dafaf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9695373747d7a27c2fa938bc755dafaf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9d8dfa2e5310fcd347f2c885f11afcb9/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/grzegorzbaczek/.gradle/caches/transforms-2/files-2.1/9d8dfa2e5310fcd347f2c885f11afcb9/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		ADDED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/grzegorzbaczek/sdu/Android/exercises/Android 11 - Content providers and Broadcast receivers/ContentProviderExercise/app/src/main/AndroidManifest.xml
