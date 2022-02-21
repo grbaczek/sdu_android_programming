@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import java.lang.RuntimeException
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
     /** Called when the user taps the Send button  */
     fun sendMessage(view: View?) {
+
+        throw RuntimeException("hello there!")
         val intent = Intent(this, DisplayMessageActivity::class.java)
         val editText = findViewById<EditText>(R.id.editText)
         val message = editText.text.toString()

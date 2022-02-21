@@ -14,20 +14,23 @@ import android.view.View
 /**
  * Created by grzegorzbaczek on 23/02/2018.
  */
-class CustomSwipeView @SuppressLint("ClickableViewAccessibility") constructor(context: Context?, attrs: AttributeSet?) : View(context, attrs), GestureDetector.OnGestureListener {
+class CustomSwipeView @SuppressLint("ClickableViewAccessibility") constructor(
+    context: Context?,
+    attrs: AttributeSet?
+) : View(context, attrs), GestureDetector.OnGestureListener {
 
     private val colors: IntArray = intArrayOf(
-            Color.BLACK,
-            Color.DKGRAY,
-            Color.GRAY,
-            Color.LTGRAY,
-            Color.WHITE,
-            Color.RED,
-            Color.GREEN,
-            Color.BLUE,
-            Color.YELLOW,
-            Color.CYAN,
-            Color.MAGENTA
+        Color.BLACK,
+        Color.DKGRAY,
+        Color.GRAY,
+        Color.LTGRAY,
+        Color.WHITE,
+        Color.RED,
+        Color.GREEN,
+        Color.BLUE,
+        Color.YELLOW,
+        Color.CYAN,
+        Color.MAGENTA
     )
 
     private var currentColorIndex = 0
@@ -54,17 +57,39 @@ class CustomSwipeView @SuppressLint("ClickableViewAccessibility") constructor(co
         return false
     }
 
-    override fun onScroll(e1: MotionEvent?, e2: MotionEvent?, distanceX: Float, distanceY: Float): Boolean {
+    override fun onScroll(
+        e1: MotionEvent?,
+        e2: MotionEvent?,
+        distanceX: Float,
+        distanceY: Float
+    ): Boolean {
         return false
     }
 
     override fun onLongPress(e: MotionEvent?) {}
 
-    override fun onFling(e1: MotionEvent?, e2: MotionEvent?, velocityX: Float, velocityY: Float): Boolean {
-        if (velocityX > 0) {
-            currentColorIndex--
-        } else if (velocityX < 0) {
-            currentColorIndex++
+
+    private val SWIPE_DISTANCE_THRESHOLD = 100
+    private val SWIPE_VELOCITY_THRESHOLD = 100
+
+    override fun onFling(
+        e1: MotionEvent?,
+        e2: MotionEvent?,
+        velocityX: Float,
+        velocityY: Float
+    ): Boolean {
+
+        val distanceX = e2!!.x - e1!!.x
+        val distanceY = e2.y - e1.y
+        if (Math.abs(distanceX) > Math.abs(distanceY) && Math.abs(distanceX) > SWIPE_DISTANCE_THRESHOLD && Math.abs(velocityX) > SWIPE_VELOCITY_THRESHOLD
+        ) {
+            if (distanceX > 0) {
+                currentColorIndex--
+                Log.i("CustomSwipeView", "velocityX > 0")
+            } else{
+                currentColorIndex++
+                Log.i("CustomSwipeView", "velocityX < 0")
+            }
         }
 
         if (currentColorIndex >= colors.size) {
