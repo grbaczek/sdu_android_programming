@@ -62,7 +62,7 @@ class ArticleFragment : Fragment() {
     }
 
     fun updateArticleView(position: Int) {
-        tvArticle.text = Ipsum.Articles?.get(position)
+        tvArticle.text = Ipsum.Articles[position]
         mCurrentPosition = position
     }
 
