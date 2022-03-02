@@ -39,7 +39,7 @@ class HeadlinesFragment : ListFragment() {
         val layout = android.R.layout.simple_list_item_activated_1
 
         // Create an array adapter for the list view, using the Ipsum headlines array
-        listAdapter = ArrayAdapter(activity, layout, Ipsum.Headlines)
+        listAdapter = ArrayAdapter(requireContext(), layout, Ipsum.Headlines)
     }
 
     override fun onStart() {
