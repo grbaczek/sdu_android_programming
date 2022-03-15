@@ -36,7 +36,7 @@ class JokeViewModel : ViewModel() {
                 // Post the joke to live data
                 _joke.postValue(jokeText)
                 // Suspend the coroutine for 5 seconds
-                delay(10)
+                delay(3000)
             }
         }
     }
